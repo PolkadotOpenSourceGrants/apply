@@ -1,4 +1,6 @@
 # Dazhbog - Perpetual Futures Exchange
+![Dazhbog-logo-500x184](https://github.com/user-attachments/assets/1b7b277b-ea5a-4d00-94f3-4f9a778bb71e)
+
 
 ## Project Overview
 
@@ -26,8 +28,6 @@ For this grant program, the plan is to develop an MVP of the project, and theref
 - Our long-term vision for Dazhbog is to become a leading platform for decentralized perpetual futures trading within the Polkadot ecosystem. Ultimately, our goal is to contribute significantly to the DeFi space, providing a reliable and advanced trading platform that meets the evolving needs of the global financial community.
 
 ## Team
-
-> Please note that the data provided in this section is for administrative and informational purposes only. All beneficiaries of a grant must also be listed in the KYC/KYB process during the application phase.
 
 - **Team Name:** Ceres Blockchain Solutions
 - **Contact Name:** Danijel Radulovic
@@ -111,7 +111,7 @@ Modules which will be implemented in the PoC:
 | 3. | Initial design documents and architecture | Develop initial product design and architectural plan. |
 | 4. | Configured development environment | Configure development environment and set up workflows. |
 | 5. | Setup for core development work | Develop Trading Engine and Market Module. |
-<br/><br/>
+
 ### Milestone 2 - Core development work
 
 - **Estimated duration:** 2 months
@@ -127,9 +127,8 @@ Modules which will be implemented in the PoC:
 | 1. | Implemented core functions | Develop Positions Management and Liquidation Module. |
 | 2. | Implemented features needed for risk management of the platform | Develop Fees Module, Margin Module and Risk Management. |
 | 3. | Implemented collection and distribution of trading fees | Develop Revenue Collection. |
-<br/><br/>
 
-### Budget Breakdown (Example, please adapt)
+### Budget Breakdown
  **Category:** Budget Breakdown positions are split within the following categories: 
  
 - Personnel
@@ -138,7 +137,7 @@ Modules which will be implemented in the PoC:
 
 | Category | Item | Cost | Amount | Total | Description |
 | --- | ---- | --- | --- | --- | ---|
-| Personell | CTO | 6,000 USD | 0.5 FTE | 3,000 USD |  |
+| Personell | CTO | 6,000 USD | 0.5 FTE | 3,000 USD | oversees technology strategy, development, and implementation for the project  |
 | Personell | Protocol Engineer | 4,000 USD | 3 FTE | 12,000 USD | leading project with tech architecture and design |
 | Personell | Blockchain Developer | 3,000 USD | 3 FTE | 9,000 USD | focused on execution and implementation |
 | Personell | Blockchain Developer | 3,000 USD | 2 FTE | 6,000 USD | focused on execution and implementation |
@@ -150,5 +149,5 @@ Modules which will be implemented in the PoC:
 - After successfully completing and verifying the MVP, our plan is to apply for some grant to build the entire working product.
 - The code will also be open-source, allowing all Polkadot builders to use it to enhance the DeFi landscape on Polkadot.
 - Once the full product is built, we plan to finance Dazhbog through a combination of strategies. Initially, we will leverage grants and funding from Polkadot’s ecosystem support programs to cover development and launch costs. Post-launch, we intend to implement a fee model where a small percentage of trading fees will be allocated towards the project's maintenance and further development.
-- In the short term, our focus is on completing the development and integration of Dazhbog with the Hydration parachain. We will launch a series of marketing campaigns to raise awareness and attract users to our platform. This includes educational content, tutorials, and community engagement through social media and forums to help new users understand and utilize Dazhbog effectively.
+- We will launch a series of marketing campaigns to raise awareness and attract users to our platform. This includes educational content, tutorials, and community engagement through social media and forums to help new users understand and utilize Dazhbog effectively.
 - Our long-term vision for Dazhbog is to become a leading platform for decentralized perpetual futures trading within the Polkadot ecosystem. Ultimately, our goal is to contribute significantly to the DeFi space, providing a reliable and advanced trading platform that meets the evolving needs of the global financial community.
