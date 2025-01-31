@@ -31,7 +31,7 @@ Our team is passionate about bridging the gap between IoT and blockchain technol
 3. **Blockchain Interaction Module**: Facilitates state queries, event subscriptions, and metadata retrieval.
 
 ### PoC/MVP
-We have developed a proof-of-concept (PoC) that demonstrates basic blockchain interactions (transaction signing and state queries) on an ESP32 microcontroller. The PoC includes a minimal implementation of the SDK and has been tested in a controlled environment.
+We are currently in the process of developing a **proof-of-concept (PoC)** that will demonstrate basic blockchain interactions, such as transaction signing and state queries, on an ESP32 microcontroller. The PoC will include a minimal implementation of the SDK, showcasing its core functionality in a controlled environment. While the PoC is not yet complete, we have made significant progress in designing the architecture and implementing key components in both C/C++ and MicroPython. Once finalized, the PoC will serve as the foundation for the **Minimum Viable Product (MVP)**, which will expand on these capabilities to support a wider range of IoT devices and use cases.
 
 ### Mockups/Designs
 - **UI Components**: Since DotLink is primarily an SDK, there are no UI components. However, we provide example applications that demonstrate how to use the SDK in various IoT scenarios.
@@ -110,7 +110,7 @@ DotLink is specifically designed for IoT devices, with a focus on minimal resour
    - **GitHub**: [haoyang-li](https://github.com/haoyang-li)
 
 ### Team Code Repos
-- [DotLink SDK](https://github.com/dotlink/sdk)
+- [DotLink SDK](https://github.com/MontaQLabs/DotLink)
 
 ### Team's Experience
 - **Abhiraj Mengade**: PBA Singapore Graduate (Distinction), Winner of OneBlock Bangkok Hackathon, EthIndia Hackathon '22 and '24, and AngelHack Polkadot Hackathon Europe. Experienced in blockchain development and cloud engineering.
