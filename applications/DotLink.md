@@ -59,8 +59,26 @@ DotLink fills a critical gap in the Polkadot ecosystem by enabling IoT devices t
 - **Security**: DotLink includes robust cryptographic operations to ensure secure transactions and data integrity.
 
 ### Evidence of Need
-- **Forum Discussions**: Discussions on the Polkadot Forum ([Polkadot Forum](https://forum.polkadot.network/)) have highlighted the need for lightweight solutions for IoT devices.
-- **Hackathon Projects**: Several hackathon projects have attempted to integrate IoT devices with Polkadot, but none have provided a reusable SDK like DotLink.
+
+- **Forum Discussions**: Discussions on the Polkadot Forum ([Polkadot Forum](https://forum.polkadot.network/)) have highlighted the need for lightweight solutions for IoT devices. Below are some key discussions that demonstrate the growing interest in IoT and resource-constrained device integration within the Polkadot ecosystem:
+  - [Introducing the Robonomics Smart Home Demo Stand: Smarter, Safer Homes](https://forum.polkadot.network/t/introducing-the-robonomics-smart-home-demo-stand-smarter-safer-homes/2868)  
+    This discussion showcases the potential of IoT devices in smart home applications and the need for lightweight solutions to integrate them with Polkadot.
+  - [Elastic Scaling](https://forum.polkadot.network/t/elastic-scaling/7185)  
+    Highlights the importance of scalability in blockchain networks, particularly for IoT use cases where thousands of devices may need to interact with the blockchain.
+  - [Discussion: Highest Priority Pallet Functionality](https://forum.polkadot.network/t/discussion-highest-priority-pallet-functionality/3289)  
+    Explores the need for optimized pallet functionality to support resource-constrained devices, such as IoT sensors and actuators.
+  - [Exploring Geo Data, Real-Time Mapping, and AI Opportunities on Polkadot](https://forum.polkadot.network/t/exploring-geo-data-real-time-mapping-and-ai-opportunities-on-polkadot/10842)  
+    Discusses the potential of IoT devices in geo-data collection and real-time mapping, emphasizing the need for lightweight SDKs to enable seamless integration.
+  - [ATR Network: A Multimodal Supercomputing Network for Decentralized Private Data Training](https://forum.polkadot.network/t/atr-network-a-multimodal-supercomputing-network-for-decentralized-private-data-training/7645)  
+    Highlights the importance of decentralized data processing, which can benefit from IoT devices connected to the Polkadot ecosystem.
+  - [The Power of Vehicle Data for Everyone: LinkedCar](https://forum.polkadot.network/t/the-power-of-vehicle-data-for-everyone-linkedcar/6182)  
+    Demonstrates the potential of IoT devices in the automotive industry and the need for lightweight solutions to connect vehicles to the blockchain.
+  - [DC: Decentralized Cloud](https://forum.polkadot.network/t/dc-decentralized-cloud/6345)  
+    Explores the concept of decentralized cloud computing, which can leverage IoT devices for edge computing and data collection.
+
+- **Hackathon Projects**: Several hackathon projects have attempted to integrate IoT devices with Polkadot, but none have provided a reusable SDK like DotLink. These projects often face challenges related to resource constraints and lack of optimized tools, further emphasizing the need for a lightweight SDK tailored for IoT devices.
+
+---
 
 ### Similar Projects
 - **Polkadot.js**: A JavaScript library for interacting with Polkadot, but it is not suitable for resource-constrained IoT devices.
@@ -78,8 +96,8 @@ DotLink is specifically designed for IoT devices, with a focus on minimal resour
 
 ### Contact Information
 - **Contact Name**: Abhiraj Mengade
-- **Contact Email**: abhiraj.mengade@example.com
-- **Website**: [DotLink GitHub](https://github.com/dotlink)
+- **Contact Email**: abhiraj.mengade@outlook.com
+- **Website**: [DotLink GitHub](https://github.com/MontaQLabs/DotLink)
 
 ### Team Members
 1. **Abhiraj Mengade**
@@ -93,10 +111,9 @@ DotLink is specifically designed for IoT devices, with a focus on minimal resour
 
 ### Team Code Repos
 - [DotLink SDK](https://github.com/dotlink/sdk)
-- [DotLink Examples](https://github.com/dotlink/examples)
 
 ### Team's Experience
-- **Abhiraj Mengade**: Winner of OnBlock Bangkok Hackathon, EthIndia Hackathon '22 and '24, and AngelHack Polkadot Hackathon Europe. Experienced in blockchain development and cloud engineering.
+- **Abhiraj Mengade**: PBA Singapore Graduate (Distinction), Winner of OneBlock Bangkok Hackathon, EthIndia Hackathon '22 and '24, and AngelHack Polkadot Hackathon Europe. Experienced in blockchain development and cloud engineering.
 - **Haoyang Li**: Winner of the 3rd Varathon, with expertise in Rust development and system security.
 
 ---
@@ -104,7 +121,7 @@ DotLink is specifically designed for IoT devices, with a focus on minimal resour
 ## Development Status
 
 ### Current Progress
-- **PoC**: A proof-of-concept has been developed and tested on ESP32.
+- **PoC**: Currently performing research on implementating SDK in Micropython and C/C++
 - **Research**: We have conducted extensive research on lightweight cryptography and IoT device constraints.
 - **Documentation**: Initial documentation and API specifications are available on GitHub.
 
@@ -113,31 +130,47 @@ DotLink is specifically designed for IoT devices, with a focus on minimal resour
 ## Development Roadmap
 
 ### Overview
-- **Estimated Duration**: 3 months
-- **Full-Time Equivalent (FTE)**: 2 FTE
-- **Total Costs**: $14,000 USD
+- **Estimated Duration**: 6-9 months  
+- **Full-Time Equivalent (FTE)**: 2 FTE  
+- **Total Costs**: $30,000 USD  
 
 ### Milestones
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0a. | License | Apache 2.0 |
-| 0b. | Documentation | Inline code documentation and a basic tutorial |
-| 0c. | Testing and Testing Guide | Comprehensive unit tests and a testing guide |
-| 0d. | Docker | Dockerfile for testing the SDK |
-| 0e. | Article | Publish an article explaining the SDK's functionality |
-| 1. | Core SDK | Implement core functionality (connectivity, cryptography, blockchain interaction) |
-| 2. | Example Applications | Provide example applications for ESP32, Arduino, and Raspberry Pi |
-
-### Budget Breakdown
-
-| Category | Item | Cost | Amount | Total | Description |
-| --- | ---- | --- | --- | --- | ---|
-| Personnel | Full-Stack Developer | $8,000 USD | 0.5 FTE | $4,000 USD | Leading project with tech architecture and design |
-| Personnel | Smart Contract Developer | $10,000 USD | 1 FTE | $10,000 USD | Focused on execution and implementation |
-| --- | --- | --- | **Total** | **$14,000 USD** |  |
+| **0a.** | **License** | Apache 2.0 |
+| **0b.** | **Documentation** | Inline code documentation and a basic tutorial |
+| **0c.** | **Testing and Testing Guide** | Comprehensive unit tests and a testing guide |
+| **0d.** | **Docker** | Dockerfile for testing the SDK |
+| **0e.** | **Article** | Publish an article explaining the SDK's functionality |
+| **1.** | **Core SDK (C/C++)** | Implement core functionality (connectivity, cryptography, blockchain interaction) in C/C++ |
+| **2.** | **Core SDK (MicroPython)** | Implement core functionality (connectivity, cryptography, blockchain interaction) in MicroPython |
+| **3.** | **Example Applications** | Provide example applications for ESP32, Arduino, and Raspberry Pi |
 
 ---
+
+## Budget Breakdown
+
+| Category | Item | Cost | Amount | Total | Description |
+| --- | ---- | --- | --- | --- | --- |
+| **Personnel** | **Senior C/C++ Developer** | $18,000 USD | 1 FTE | $18,000 USD | Leading the implementation of the SDK in C/C++, focusing on core functionality and optimization for IoT devices. |
+| **Personnel** | **MicroPython Developer** | $9,000 USD | 0.5 FTE | $9,000 USD | Implementing the SDK in MicroPython and ensuring cross-platform compatibility. |
+| **Equipment** | **Development Hardware** | $3,000 USD | 1 | $3,000 USD | Purchase of IoT devices for testing (ESP32, Arduino, Raspberry Pi). |
+| **Miscellaneous** | **Contingency** | $0 USD | 1 | $0 USD | Buffer for unforeseen expenses (not required in this budget). |
+| --- | --- | --- | **Total** | **$30,000 USD** |  |
+
+---
+
+### Notes:
+1. **Timeline**: The project is planned for **6-9 months** to deliver a **Minimum Viable Product (MVP)**.  
+2. **Personnel**:  
+   - A **Senior C/C++ Developer** will lead the core implementation of the SDK, ensuring it is optimized for resource-constrained IoT devices.  
+   - A **MicroPython Developer** will focus on implementing the SDK in MicroPython and ensuring cross-platform compatibility.  
+3. **Equipment**: Funds are allocated for purchasing IoT devices (ESP32, Arduino, Raspberry Pi) for testing and development.  
+
+---
+
+Future Plans
 
 ## Future Plans
 
@@ -156,11 +189,10 @@ Our long-term goal is to make DotLink the go-to SDK for IoT developers looking t
 ## Additional Information
 
 ### Work Done
-- Developed a PoC for ESP32.
 - Conducted research on lightweight cryptography and IoT device constraints.
 
 ### Funding
 - Currently self-funded. We are exploring additional funding opportunities.
 
 ### Other Applications
-- We have applied for the Polkadot Open Source Grant to support the development of DotLink.
+- None
