@@ -113,7 +113,7 @@ DotLink is specifically designed for IoT devices, with a focus on minimal resour
 - [DotLink SDK](https://github.com/MontaQLabs/DotLink)
 
 ### Team's Experience
-- **Abhiraj Mengade**: PBA Singapore Graduate (Distinction), Winner of OneBlock Bangkok Hackathon, EthIndia Hackathon '22 and '24, and AngelHack Polkadot Hackathon Europe. Experienced in blockchain development and cloud engineering.
+- **Abhiraj Mengade**: PBA Singapore Graduate (Distinction), Winner of OneBlock Bangkok Hackathon, EthIndia Hackathon '22 and '24, and AngelHack Polkadot Hackathon Europe.
 - **Haoyang Li**: Winner of the 3rd Varathon, with expertise in Rust development and system security.
 
 ---
