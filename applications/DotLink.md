@@ -92,7 +92,7 @@ DotLink is specifically designed for IoT devices, with a focus on minimal resour
 ## Team
 
 ### Team Name
-**DotLink Team**
+**MontaQ Labs**
 
 ### Contact Information
 - **Contact Name**: Abhiraj Mengade
@@ -114,14 +114,14 @@ DotLink is specifically designed for IoT devices, with a focus on minimal resour
 
 ### Team's Experience
 - **Abhiraj Mengade**: PBA Singapore Graduate (Distinction), Winner of OneBlock Bangkok Hackathon, EthIndia Hackathon '22 and '24, and AngelHack Polkadot Hackathon Europe.
-- **Haoyang Li**: Winner of the 3rd Varathon, with expertise in Rust development and system security.
+- **Haoyang Li**: PBA Singapore Graduate, Winner of the 3rd Varathon, with expertise in Rust development and system security.
 
 ---
 
 ## Development Status
 
 ### Current Progress
-- **PoC**: Currently performing research on implementating SDK in Micropython and C/C++
+- **PoC**: Currently performing research on implementation SDK in Micropython and C/C++
 - **Research**: We have conducted extensive research on lightweight cryptography and IoT device constraints.
 - **Documentation**: Initial documentation and API specifications are available on GitHub.
 
@@ -153,10 +153,10 @@ DotLink is specifically designed for IoT devices, with a focus on minimal resour
 
 | Category | Item | Cost | Amount | Total | Description |
 | --- | ---- | --- | --- | --- | --- |
-| **Personnel** | **Senior C/C++ Developer** | $18,000 USD | 1 FTE | $18,000 USD | Leading the implementation of the SDK in C/C++, focusing on core functionality and optimization for IoT devices. |
+| **Personnel** | **Senior C/C++ Developer** | $12,000 USD | 1 FTE | $18,000 USD | Leading the implementation of the SDK in C/C++, focusing on core functionality and optimization for IoT devices. |
 | **Personnel** | **MicroPython Developer** | $9,000 USD | 0.5 FTE | $9,000 USD | Implementing the SDK in MicroPython and ensuring cross-platform compatibility. |
 | **Equipment** | **Development Hardware** | $3,000 USD | 1 | $3,000 USD | Purchase of IoT devices for testing (ESP32, Arduino, Raspberry Pi). |
-| **Miscellaneous** | **Contingency** | $0 USD | 1 | $0 USD | Buffer for unforeseen expenses (not required in this budget). |
+| **Miscellaneous** | **Contingency** | $3000 USD | 1 | $3000 USD | Buffer for unforeseen expenses (not required in this budget). |
 | --- | --- | --- | **Total** | **$30,000 USD** |  |
 
 ---
@@ -169,8 +169,6 @@ DotLink is specifically designed for IoT devices, with a focus on minimal resour
 3. **Equipment**: Funds are allocated for purchasing IoT devices (ESP32, Arduino, Raspberry Pi) for testing and development.  
 
 ---
-
-Future Plans
 
 ## Future Plans
 
