@@ -1,15 +1,9 @@
 # Decentralized AI Marketplace Infrastructure 
 
-> This document will be part of the terms and conditions of your agreement and, therefore, needs to contain all the required information about the project. Don't remove any of the mandatory parts presented in bold letters or as headlines (except for the title)! Lines starting with a `>` (such as this one) should be removed. Please use markdown instead of HTML (e.g., `![](image.png)` instead of `<img>`).
->
-> See the [Grants Program Process](https://github.com/PolkadotOpenSourceGrants/apply/#pencil-process) on how to submit a proposal.
-
 - **Team Name:** Caibrain Labs
 - **Payment Details:**
   -**DOT**:16S6Dtj6ZgefFvABokxfyoM1cEM7gvxqxf94AvoCEe9DrZ9b
 - **Requested DOT:** 30K USD in DOTs.
-
-> :exclamation: *The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe.*
 
 ## Project Overview :page_facing_up:
 
@@ -47,7 +41,6 @@ Conceptually the AI inferences marketplace supports 3 different actors:
 
 <img width="843" alt="upload_415b196befed33f5b63d5096f9d0c927" src="https://github.com/user-attachments/assets/00b02718-1d6a-4a91-95ce-41702919c8e5" />
 
-
 These actors are coordinated and orchestrated by the blockchain powered by the Polkadot-SDK framework, which tracks agreements and interactions among them. However, it is important to note that the blockchain alone is not sufficient to complete the entire process of a user requesting an inference from a model and the model returning the response back to the user.
 
 For this reason, certain services need to be deployed on the infrastructure provider's side to handle off-chain AI activities. These activities will eventually be registered on the blockchain.
@@ -55,7 +48,6 @@ For this reason, certain services need to be deployed on the infrastructure prov
 ### User Flow:
 
 <img width="1085" alt="upload_75168ddf02295aa21ab48b2f35c2980a" src="https://github.com/user-attachments/assets/a143ba40-c494-486c-b6fb-15db959e6dad" />
-
 
 Each model can be hosted by multiple infrastructure providers, ensuring fair competition for the best price and service for consumers needing inferences for a specific model.
 
