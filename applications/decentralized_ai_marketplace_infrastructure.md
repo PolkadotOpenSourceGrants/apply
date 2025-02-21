@@ -2,7 +2,7 @@
 
 - **Team Name:** Caibrain Labs
 - **Payment Details:**
-  -**DOT**:16S6Dtj6ZgefFvABokxfyoM1cEM7gvxqxf94AvoCEe9DrZ9b
+  - **DOT**:16S6Dtj6ZgefFvABokxfyoM1cEM7gvxqxf94AvoCEe9DrZ9b
 - **Requested DOT:** 30K USD in DOTs.
 
 ## Project Overview :page_facing_up:
@@ -134,9 +134,9 @@ Fetch.AI is an open platform that provides tools for building and deploying AI a
 
 ### Team members
 
-Hector Bulgarini: Senior Software Developer and Team Lead
-Hernan Borelli: Product & Project Manager
-Alexander Kalankhodzhaev: Senior Blockchain and protocol Engineer
+- Hector Bulgarini: Senior Software Developer and Team Lead
+- Hernan Borelli: Product & Project Manager
+- Alexander Kalankhodzhaev: Senior Blockchain and protocol Engineer
 
 ### Contact
 
@@ -161,8 +161,8 @@ Additionally, he currently maintains GO-LINQ, a language integrated query (LINQ)
 
 ### Team Code Repos
 
-Alex: https://github.com/kalaninja
-Hector: https://github.com/hbulgarini
+- Alex: https://github.com/kalaninja
+- Hector: https://github.com/hbulgarini
 
 ### Team Code Repos
 
@@ -177,12 +177,12 @@ https://github.com/caibrain-labs?tab=repositories
 
 ## Development Status :open_book:
 
-The code is nearly complete; however, we are currently in the final phase of preparing some features for production, completing documentation, and reviewing the most recently added functionalities.
+The code is nearly complete; however, we are currently in the final phase of preparing some features from the product perspective, completing documentation, and reviewing the most recently added functionalities.
 
 You can find some of Deitos Network’s previous code here:
 https://github.com/Deitos-Network
 
-It’s important to note that significant changes have been made to the infrastructure, reflecting a new strategic focus taken by the infrastructure provider.
+It’s important to note that significant changes have been made on the infrastructure providers side, reflecting a new strategic focus taken by the project stated in this grant.
 
 ## Development Roadmap :nut_and_bolt:
 
