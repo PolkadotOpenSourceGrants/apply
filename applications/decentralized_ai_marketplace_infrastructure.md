@@ -45,7 +45,8 @@ Conceptually the AI inferences marketplace supports 3 different actors:
 - Infrastructure providers: Provide the necessary infrastructure to deploy and offer a model inference.
 - Consumers: End users needing AI inferences for different purposes.
 
-![Screenshot 2024-12-17 at 18.46.08](https://hackmd.io/_uploads/BkegKN1rke.png)
+<img width="843" alt="upload_415b196befed33f5b63d5096f9d0c927" src="https://github.com/user-attachments/assets/00b02718-1d6a-4a91-95ce-41702919c8e5" />
+
 
 These actors are coordinated and orchestrated by the blockchain powered by the Polkadot-SDK framework, which tracks agreements and interactions among them. However, it is important to note that the blockchain alone is not sufficient to complete the entire process of a user requesting an inference from a model and the model returning the response back to the user.
 
@@ -53,7 +54,8 @@ For this reason, certain services need to be deployed on the infrastructure prov
 
 ### User Flow:
 
-![User Flow Diagram](https://hackmd.io/_uploads/ry0IzSkrJe.png)
+<img width="1085" alt="upload_75168ddf02295aa21ab48b2f35c2980a" src="https://github.com/user-attachments/assets/a143ba40-c494-486c-b6fb-15db959e6dad" />
+
 
 Each model can be hosted by multiple infrastructure providers, ensuring fair competition for the best price and service for consumers needing inferences for a specific model.
 
@@ -71,8 +73,7 @@ With all bids available, the consumer can then select the infrastructure provide
 
 To enhance usability and reduce operational costs on the blockchain, the project offers an automation bot called Wingman. Wingman can operate within the same ecosystem that hosts a full node and dockerized AI models. The bot provides a RESTful API, allowing for easy initialization and real-time configuration adjustments. Once properly configured, Wingman automates the provider’s operations on the network, monitoring the blockchain and responding accordingly. Its functions include bidding on market orders, tracking active agreements, and executing AI models.
 
-![wingman.drawio](https://hackmd.io/_uploads/rJIhxYZB1g.png)
-
+![upload_7c9833965c7d8579e8a7352203600c89](https://github.com/user-attachments/assets/7ad77283-2aee-4a07-bb6d-a10938ad1a3b)
 
 ### DX Network 
 Since model payloads can be large and the blockchain itself is not suitable for transferring substantial data, this solution introduces a separate peer-to-peer network for data exchange (Dx). This network is optimized for the quick sharing of relatively small data off-chain. The current implementation is embedded within the Polkadot-SDK node and accessible through an RPC API relying on two methods:
@@ -85,8 +86,7 @@ Since model payloads can be large and the blockchain itself is not suitable for 
 
 Once the agreement between the consumer and provider is established, the consumer obtain  AI models inferences using the provider’s infrastructure. This is done by posting the request’s payload on the Dx network and registering its hash on the blockchain. The provider is notified of the new request, downloads the payload, executes the specified AI model, and sends back the response. The response follows the same procedure as the request: it is uploaded to the Dx network, and its hash is recorded on the blockchain. Upon completion of this process, the model owner receives their royalty payment.
 
-![Execution.drawio](https://hackmd.io/_uploads/ByOO-K-H1x.png)
-
+![upload_417f0036280aec525312e91565aceb2b](https://github.com/user-attachments/assets/4d4f0816-5e25-4132-9533-1847589bbe18)
 
 ### Ecosystem Fit
 
@@ -148,15 +148,15 @@ Alexander Kalankhodzhaev: Senior Blockchain and protocol Engineer
 
 ### Contact
 
-- **Contact Name:** Full name of the contact person in your team
-- **Contact Email:** Contact email (e.g. john@duo.com)
-- **Website:** Your website
+- **Contact Name:** Hector Bulgarini / Hernan Borelli
+- **Contact Email:** contact@caibrainlabs.com
+- **Website:** https://caibrainlabs.com/
 
 ### Legal Structure
 
-- **Registered Address:** Address of your registered legal entity, if available. Please keep it in a single line. (e.g. High Street 1, London LK1 234, UK)
-- **Registered Legal Entity:** Name of your registered legal entity, if available. (e.g. Duo Ltd.)
-
+- **Registered Address:** To be provided privately with curators.
+- **Registered Legal Entity:** To be provided privately with curators.
+  
 ### Team's experience
 
 Hector: With over 15 years in the technology sector, Hector focused on blockchain and Polkadot tech stack evidenced by his work at Parity and the graduation from the first Cambridge cohort of the Polkadot Academy. Hector also have founded and led multiple startups showing a strong entrepreneurial spirit.
