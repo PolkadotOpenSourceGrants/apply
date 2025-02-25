@@ -14,13 +14,6 @@ Deitos Network has transitioned into a more dedicated AI services platform focus
 
 ### Overview
 
-Please provide the following:
-
-- If the name of your project is not descriptive, a tagline (one sentence summary).
-- A brief description of your project.
-- An indication of how your project relates to / integrates into Substrate / Polkadot / Kusama.
-- An indication of why your team is interested in creating this project.
-
 The Decentralized AI Marketplace Infrastructure is a utility that enables any Polkadot-SDK-based network to implement an AI model ownership framework where model owners can deploy their models on a decentralized network of infrastructure providers and offer inferences to any consumer needing to embed AI services into their solutions. Key features of this tool include:
 - Model ownership and management in form of NFT.
 - A marketplace for AI models inferences offered by infrastructure providers.
