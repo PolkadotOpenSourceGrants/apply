@@ -75,8 +75,6 @@ Once the agreement between the consumer and provider is established, the consume
 
 ### Ecosystem Fit
 
-Help us locate your project in the Polkadot/Substrate/Kusama landscape and what problems it tries to solve by answering each of these questions:
-
 - **Where and how does your project fit into the ecosystem?**
 
 AI is becoming important in many areas like businesses, organizations, and foundations. Our project provides a decentralized infrastructure to host AI models, allowing any Polkadot-based project to use a safe and distributed platform for their AI needs.
