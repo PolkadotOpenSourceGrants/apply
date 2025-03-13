@@ -1,18 +1,11 @@
 # Decentralized AI Marketplace Infrastructure 
 
-- **Team Name:** Caibrain Labs
-- **Payment Details:**
-  - **DOT**:16S6Dtj6ZgefFvABokxfyoM1cEM7gvxqxf94AvoCEe9DrZ9b
-- **Requested DOT:** 30K USD in DOTs.
-
-## Project Overview :page_facing_up:
+## Project Overview
 
 The project was formerly known as Deitos Network that started as a decentralized big data & AI platform adquired a Web3 Foundation grant listed below:
 
 https://github.com/w3f/Grants-Program/blob/master/applications/Deitos_Network.md
 Deitos Network has transitioned into a more dedicated AI services platform focused on a marketplace of model inferences that is the purpose of this grant.
-
-### Overview
 
 The Decentralized AI Marketplace Infrastructure is a utility that enables any Polkadot-SDK-based network to implement an AI model ownership framework where model owners can deploy their models on a decentralized network of infrastructure providers and offer inferences to any consumer needing to embed AI services into their solutions. Key features of this tool include:
 - Model ownership and management in form of NFT.
@@ -205,6 +198,20 @@ It’s important to note that significant changes have been made on the infrastr
 | 4.  | Dx Network                  | The Substrate node will include a fully implemented Substrate RPC with its own Kademlia P2P network, supporting the `dx_upload` and `dx_download` calls outlined in the architectural design.   |
 | 5.  | Wingman                     | Automation of the bidding process for infrastructure providers will be managed by the Wingman service, included in this grant. The service will expose a RESTful API, enabling communication between the Substrate node and infrastructure providers.  |
 | 6.  | Cockpit                     | A simple adaptation of the Substrate Frontend template with the react components setup to interact with the marketplace. |
+
+### Budget Breakdown (Example, please adapt)
+ **Category:** Budget Breakdown positions are split within the following categories: 
+ 
+- Personnel
+- Equipment
+- Subcontracts/Subscriptions
+
+| Category | Item | Cost | Amount | Total | Description |
+| --- | ---- | --- | --- | --- | ---|
+| Personell | Technical Lead Developer | 12,000 USD | 1 FTE | 12,000 USD | Lead the architecture design and implementation |
+| Personell | Full-Stack Developer | 10,000 USD | 1 FTE | 8,000 USD | Develop the code base according to the design principles. Also the owner of the UI. |
+| Personell | Project Lead | 8,000 USD | 1 FTE | 8,000 USD | Manage communication with all the project team and stakeholders, builds user documentation and ensures the timelines. |
+| --- | --- | --- | **Total** | **30,000 USD** |  |
 
 
 ## Future Plans
