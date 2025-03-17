@@ -37,10 +37,9 @@
 
 ## Team
 
-- **Team Name:** Name of your team. If you apply as a legal entity, please use its name.
-- **Contact Name:** Full name of the contact person in your team
-- **Contact Email:** Contact email
-- **Website:** Your website, GitHub org, blog, or similar
+
+### Team name
+- ZxStim
 
 ### Team members
 
@@ -62,7 +61,7 @@
 
 ### Team's experience
 
-Please describe the team's relevant experience, such as Polkadot-related projects in progress or contributions to the ecosystem made by team members in the past.
+- Contributed to OpenGuild DotUI kit
 
 ## Development Status
 
@@ -74,9 +73,9 @@ Please describe the team's relevant experience, such as Polkadot-related project
 
 ### Overview
 
-- **Estimated Duration:** 12 months
-- **Full-Time Equivalent (FTE):**  1
-- **Total Costs:** 30,000 USD
+- **Estimated Duration:** 3 months
+- **Full-Time Equivalent (FTE):**  2 staffs
+- **Total Costs:** 21,000 USD
 
 
 | Number | Deliverable | Specification |
@@ -93,18 +92,15 @@ Please describe the team's relevant experience, such as Polkadot-related project
 | 5. | Transaction History component | We will deliver a Transaction History component that allows users to view their transaction history |
 | 6. | Liquid Staking component | We will deliver a Liquid Staking component that allows users to mint LST and redeem LST |
 | 7. | Cross Chain Transfer/Bridge component | We will deliver a Cross Chain Transfer/Bridge component that allows users to transfer/bridge tokens to/from other chains |
+| 8. | AI agent Chat interface | We will deliver an AI agent chat interface component based on Vercel AI SDK that allows developers to build workflows |
 
 ### Budget Breakdown (Example, please adapt)
- **Category:** Budget Breakdown positions are split within the following categories: 
- 
-- Personnel
-- Equipment
-- Subcontracts/Subscriptions
 
 | Category | Item | Cost | Amount | Total | Description |
 | --- | ---- | --- | --- | --- | ---|
-| Personel | Full-Stack Developer | 2,500 USD | 12 months | 30,000 USD | Leading the project with architecture, implementation and community coordination |
-| --- | --- | --- | **Total** | **30,000 USD** |  |
+| Personel | Lead Full-Stack Developer | 4,000 USD | 3 months | 12,000 USD | Leading the project with architecture, implementation and community coordination |
+| Personel | Full-Stack Developer | 3,000 USD | 3 months | 9,000 USD | Supporting the Lead Full-stack developer |
+| --- | --- | --- | **Total** | **21,000 USD** | --- |
 
 
 ## Future Plans
