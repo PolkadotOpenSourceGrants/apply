@@ -197,6 +197,14 @@ This project will be delivered in three milestones over the course of two months
 | 3         | Public Viewer (Web UI) + Final Documentation, Testing, and Article | $3,500 | Month 2 |
 | **Total** | — | **$10,000** | **2 Months** |
 
+### Breakdown of Grant Use  
+- **$5,000** — Tech infrastructure (e.g. LLM/API costs for personalization, hosting, domain, smart contract deployment tools)  
+- **$2,500** — Travel and registration for industry events to connect with brands to grow supply side & investors
+- **$1,000** — Internal tools and automation (e.g. video creation, event hosting, community tools)  
+- **$1,500** — Freelancers or creative support for design, content, or marketing
+
+These estimates are based on ~100–120 hours of work at an average blended rate of ~$80/hour across development, UI, and content execution.
+
 ## 🔮 Future Plans
 
 After the Fast-Grant, we plan to integrate this transparency module directly into our marketplace. We may expand it to support CO₂ impact tags using SKU-level LCAs as brand partnerships grow.
