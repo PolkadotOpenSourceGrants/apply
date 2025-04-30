@@ -301,6 +301,9 @@ Damilare Akinlose - [Polkadot Fellowship Member](https://github.com/polkadot-fel
 
 - [Damilare Akinlose](https://www.linkedin.com/in/damilare-akinlose-6289b5b8)
 
+## Development Status
+The project is in the research and design phase, with foundational architecture and protocol specifications for milestone 1 finalized through extensive technical exploration.
+
 ## Development Roadmap :nut_and_bolt:
 
 ### Overview
