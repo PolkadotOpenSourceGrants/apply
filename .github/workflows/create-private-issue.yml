@@ -1,0 +1,40 @@
+name: Create Issue on PR Creation
+
+on:
+  pull_request:
+    types: [opened]
+
+jobs:
+  create-issue:
+    # Prevent secret exposure on forked PRs
+    if: github.repository == 'Polkadot-Fast-Grants/apply'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: read
+
+    steps:
+      - name: Create issue in private repository
+        uses: actions/github-script@v6
+        with:
+          github-token: ${{ secrets.PRIVATE_REPO_PAT }}
+          script: |
+            const pr = context.payload.pull_request;
+            const prTitle = pr.title;
+            const prNumber = pr.number;
+            const prAuthor = pr.user.login;
+            const prLink = pr.html_url;
+
+            await github.rest.issues.create({
+              owner: 'Polkadot-Fast-Grants',
+              repo: 'Internal-Reviews',
+              title: `New Grant Submission: ${prTitle}`,
+              body: `A new PR was submitted in the public repository.
+              
+              **PR Details**
+              - **Title**: ${prTitle}
+              - **Author**: @${prAuthor}
+              - **Link**: ${prLink}
+              `,
+              labels: ['Needs Review']
+            });
