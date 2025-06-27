@@ -1,49 +1,44 @@
 # Fundation  
 
 ## Project Overview
+Tagline:
+Build fast and break things: a toolkit for going from concept to launch quickly.
 
-Please provide the following:
+Project Description:
+Fundation is a set of modules that empowers developers to build decentralized applications (dApps) rapidly on the Polkadot ecosystem.
 
-- If the name of your project is not descriptive, a tagline (one sentence summary)
-build fast and break things code that allows to go from 0 to 1 fast 
-- A brief description of your project
-Fundation is a set module that allow the dev to build dapps fast 
-- An indication of how your project relates to / integrates into Polkadot (SDK) / Kusama
-the main goals is to be easy to build dapp on top of assethub and rullups allow fast dev time
-- An indication of why your team is interested in creating this project
-I was building my first dapp stake2build on polkadot a year and a half only to realize how far behind polkadot is on front end or web devoper side of tooling altho we made alot of improvement i still belive this tool will be of great benfits to the community 
+Integration with Polkadot/Kusama:
+The primary goal of Fundation is to simplify dApp development on top of Asset Hub and rollups, significantly reducing development time.
+
+Team's Motivation:
+While building my first dApp on Polkadot, Stake2Build, over a year and a half ago, I realized how far behind the ecosystem was in front-end and web developer tooling. Although many improvements have been made since then, I believe this tool will still be of great benefit to the community by addressing these ongoing challenges.
+
 ### Project Details
+Technology Stack:
+Core Stack: Next.js
+UI: Tailwind CSS, shadcn/ui
+Database: IndexedDB and SQLite
+API: Polkadot.js API
 
-We expect the teams to already have a solid idea about your project's expected final state. Therefore, we ask the teams to submit (where relevant):
+Proof of Concept (PoC)/MVP:
+Website: https://www.fundation.dev/
+MVP: https://www.fundation.dev/login
 
-- An overview of the technology stack to be used
-the core stack 
-nextjs 
-tailwind shadcn 
-indexeddb and sqllite 
-polkadot-api
-- PoC/MVP or other relevant prior work or research on the topic
-https://www.fundation.dev/ and mvp is https://www.fundation.dev/login
-- Mockups/designs of any UI components
-i have a bunch of video on my x page show update and ideas 
-https://x.com/swenw31
+Mockups/UI Designs:
+I have posted numerous videos on my X (formerly Twitter) page showcasing updates and ideas. You can view them here: https://x.com/swenw31.
 
-- What your project is *not* or will *not* provide or implement
-  - This is a place for you to manage expectations and clarify any limitations that might not be obvious
-with this grant i will be manily fouced on the fundation module and system chains and will not include any thirdparty rollups 
 ### Ecosystem Fit
+Fundation is positioned on the front-end side of the development stack.
 
-Help us locate your project in the Polkadot/Kusama landscape and what problems it tries to solve by answering each of these questions:
+### Target Audience:
+Our target audience includes small-scale developers, participants in hackathons, and teams looking to kickstart their projects quickly.
 
-- Where and how does your project fit into the ecosystem?
-mainly on the front end side of the dev stack 
-- Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?
-small time dev and hackathons and those looking to kickstart there porject fast 
-- What need(s) does your project meet?
-grow the devoper pool by bring dowwn the barreyer to entry 
-- How did you identify these needs? Please provide evidence in the form of (scientific) articles, forum discussions, case studies, or raw data.
-this has been talked about around the commummity for a while and there are many trying to sovle the time to market for polkadot dev i think this solction will be one of them 
-- Are there any other projects similar to yours in the Polkadot/Kusama ecosystem? Make sure to at least check the [Polkadot Forum](https://forum.polkadot.network/), the [wiki's Tech Stack doc](https://wiki.polkadot.network/docs/build-open-source) and [OpenGov](https://polkadot.subsquare.io/referenda?status=executed&is_treasury=true).
+### Needs Met:
+The project aims to lower the barrier to entry for new developers, thereby expanding the Polkadot developer pool.
+
+### Needs Identification:
+The need for better developer tooling and a faster time-to-market has been a recurring topic within the Polkadot community for some time. Multiple projects are attempting to solve this, and I believe Fundation will be a valuable addition to these efforts.
+### Comparison with Similar Projects:
 - Apillon: A Polkadot-focused Web3 platform offering UI and API integration for parachain services.
 
 - Thirdweb: An Ethereum/EVM-focused platform with SDKs and smart contract tools, targeting games and creator platforms.
@@ -53,40 +48,35 @@ this has been talked about around the commummity for a while and there are many 
   - If not, please indicate why such a project might not have been possible, successful, or attempted. 
 - Are there any projects similar to yours in related ecosystems? 
 
- Differentiation:
-- Fundation is open-source and self-hostable, prioritizing ease of use and flexibility. Unlike Apillon or Thirdweb, it doesn’t rely on third-party services—ensuring developers retain control and can adapt it freely without waiting for external updates.
+ifferentiation:
+Fundation is open-source and self-hostable, prioritizing ease of use and flexibility. Unlike Apillon or Thirdweb, it doesn’t rely on third-party services. This ensures developers retain full control over their work and can adapt it freely without waiting for external updates.
 
 ## Team
 
 > Please note that the data provided in this section is for administrative and informational purposes only. All beneficiaries of a grant must also be listed in the KYC/KYB process during the application phase.
 
 - Team Name: Fundation
-
-- Contact: Victor Stallone Peck (Swen) | Email: swenpeck@outlook.com
-
+- Contact: Victor Stallone Peck (Swen) 
+- Email: swenpeck@outlook.com
 - Website: funation.dev
-
-- Team Members: Solo developer—Victor Stallone Peck
-
+- Team Members: Victor Stallone Peck (Solo Developer)
 - Code Repos: github.com/swenthebuilder
 
 ### Team members
 
 Victor Stallone Peck (Swen) 
 
-### Team's experience
+### Team's Experience
+I have been involved in the Polkadot ecosystem for some time, but only recently decided to engage more actively. Fundation was initially intended as an internal tool for my own dApp development. However, seeing a greater need within the community, I am now seeking funding to develop it for a broader audience.
 
-Please describe the team's relevant experience, such as Polkadot-related projects in progress or contributions to the ecosystem made by team members in the past.
-ive been around polkadot for sometime but just reacenty decided to get more active enged in a bigger way fundation was going to be inter tool i would use when build my own dapps but i see a great need so i am here looking for funding other projects i also just started a new intive BuildOnDot community on X this has nothing todo with the grant that has a much simpler goal of getting new dev more conferable and conntect to the polkadot ecosystem
+In addition to this project, I recently started a new initiative called the BuildOnDot community on X. While separate from this grant, its goal is to help new developers feel more comfortable and connected within the Polkadot ecosystem.
 
 ## Development Status
 
-If you've already started implementing your project or it is part of a larger repository, please provide a link and a description of the code here. In any case, please provide some documentation on the research and other work you have conducted before applying. This could be:
-https://x.com/swenw31
-BuildOnDot
-https://x.com/i/communities/1934658730303373790
-- previous interface iterations, such as mock-ups and wireframes.
-will be adding this later as i am working on some muck-ups for mini-dapps that will be built along side to showcase the functions 
+I have been documenting my progress, including concepts and mock-ups, through regular updates on X.
+Personal Updates: https://x.com/swenw31
+BuildOnDot Community: https://x.com/i/communities/1934658730303373790
+I will be adding more formal mock-ups for the mini-dApps soon, which will be built to showcase the functionalities of Fundation.
 
 ## Development Roadmap
 
@@ -96,45 +86,79 @@ This section should break the development roadmap down into milestones and deliv
 
 ### Overview
 
-- **Estimated Duration:** Duration of the whole project 3 months
+- **Estimated Duration:** 3 months
 - **Full-Time Equivalent (FTE):**  FTE of 1.0
-- **Total Costs:** Requested amount in USD for the whole project 30,000 USD
+- **Total Costs:** $30,000 USD
 
 > Note that deliverables 0a to 0e are mandatory. Please adapt their specification to your project.
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
-| 0a. | License | Apache 2.0 / GPLv3 / MIT / Unlicense. See the [delivery guidelines](https://github.com/PolkadotOpenSourceGrants/delivery/blob/master/delivery-guidelines.md#license) for details. |
-| 0b. | Documentation | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can... See the [delivery guidelines](https://github.com/PolkadotOpenSourceGrants/delivery/blob/master/delivery-guidelines.md#documentation) for details. |
-| 0c. | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. See the [delivery guidelines](https://github.com/PolkadotOpenSourceGrants/delivery/blob/master/delivery-guidelines.md#testing-guide) for details. |
-| 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
-| 0e. | Article | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language, and medium should reflect your target audience described above.) |
-| 1. | Pallet X | We will create a Substrate module that will... (Please list the functionality that will be implemented for the first milestone. You can refer to details provided in previous sections.) |
-| 2. | Smart contract Y | The Y Substrate module will... |
-| 3. | Substrate chain | X and Y of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible) |
-| 4. | Library: ABC | We will deliver a JS library that will implement the functionality described under "ABC Library" |
+| 0a. | base module comption| Authentication, Dynamic Blockchain API, UX Refinement.  |
+| 0b. | Documentation & code releash |Detailed documentation and public code release. |
+| 0c. | mini-dapp Nft | Core functionalities for an NFT-based mini-dApp. |
+| 0d. | 4 NFT mini games | Development of four mini-games utilizing the NFT core.|
+| 0e. |	Mini-dApp: OpenGov Proposal Landing Page | A landing page for OpenGov proposals. |
 
-### Budget Breakdown (Example, please adapt)
- **Category:** Budget Breakdown positions are split within the following categories: 
- 
-- Personnel
-- Equipment
-- Subcontracts/Subscriptions
+## 📅 Development Roadmap // Budget Breakdown 
+
+### Milestone 1: Base Module Functionality
+- Includes: Deliverables 0a & 0b
+- Duration: 1 month
+- Cost: $10,000
+### Deliverables:
+- Authentication: Complete wallet-based signup/login, plus social login, email, and passkey options.
+- Dynamic Blockchain Asset Retrieval: Simplified asset fetching—developers select chains/tokens, and Fundation handles the rest.
+- UX Refinement: Streamlined chain connections/disconnections and overall design polish.
+- Code Optimization: Readable code with inline comments explaining functionality.
+- Documentation: An overview, in-depth technical details, and a getting-started tutorial.
+
+
+
+### Milestone 2: NFT Mini-dApp & Games
+- Includes: Deliverables 0c & 0d
+- Duration: 1.5 months
+- Cost: $17,000
+
+### Deliverables:
+All code, assets, landing pages, and any associated smart contracts for four mini-games: a side-scroller runner, a fighting game, a tower defense game, and a shooting range.
+
+### Milestone 3: OpenGov Proposal Mini-dApp
+- Includes: Deliverable 0e
+- Duration: 2 weeks
+- Cost: $3,000
+
+### Deliverables:
+All code and assets, including the landing page for the OpenGov proposal mini-dApp.
+
+
+### total 3 months 
 
 | Category | Item | Cost | Amount | Total | Description |
 | --- | ---- | --- | --- | --- | ---|
-| Personell | Full-Stack Developer | 30,000 USD | 1 FTE | 10,000 USD | solo build handling everything from design and ux to front and backend arcture |
+| Personell | Full-Stack Developer | 30,000 USD | 1 FTE | 30,000 USD | Solo builder handling everything from design and UX to front-end and back-end architecture. |
 | --- | --- | --- | **Total** | **30,000 USD** |  |
 
 
 ## Future Plans
 
 Please include here
-
 - how you intend to finance the project's long-term maintenance and development,
-- how you intend to use, enhance, and promote your project in the short term, and
+i have a goal of funding based on the project i personal build on top of fundation along getting support from opengov and rollsups 
+- how you intend to use, enhance, and promote your project in the short term, showcasing the minidapps and enganing with the polkadot commity 
 - the team's long-term plans and intentions in relation to it.
+long-term plans for fundation include more module like defi module that will have swap and conntect to defi rullups on the kusma and polkadot network
 
 ## Additional Information
 
-concepts and mock-ups
+Future Plans
+Long-Term Maintenance: I plan to fund long-term development through the projects I personally build on top of Fundation, as well as by seeking support from OpenGov and various rollup teams.
+
+Short-Term Promotion: I will showcase the mini-dApps and actively engage with the Polkadot community to promote the project.
+
+Long-Term Vision: The long-term plan for Fundation is to expand its modules, such as adding a DeFi module that includes a swap feature and connects to DeFi rollups on the Kusama and Polkadot networks.
+
+Additional Information
+Concepts and mock-ups will be provided as they are developed.
+
+static/nftconcept.jpeg
