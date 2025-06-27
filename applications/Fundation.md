@@ -161,4 +161,4 @@ Long-Term Vision: The long-term plan for Fundation is to expand its modules, suc
 Additional Information
 Concepts and mock-ups will be provided as they are developed.
 
-static/nftconcept.jpeg
+<img src="static/nftconcept.jpeg" alt="Banner" width="400"/>
