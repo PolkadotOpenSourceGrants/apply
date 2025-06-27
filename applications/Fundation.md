@@ -48,7 +48,7 @@ The need for better developer tooling and a faster time-to-market has been a rec
   - If not, please indicate why such a project might not have been possible, successful, or attempted. 
 - Are there any projects similar to yours in related ecosystems? 
 
-ifferentiation:
+Differentiation:
 Fundation is open-source and self-hostable, prioritizing ease of use and flexibility. Unlike Apillon or Thirdweb, it doesn’t rely on third-party services. This ensures developers retain full control over their work and can adapt it freely without waiting for external updates.
 
 ## Team
@@ -58,7 +58,7 @@ Fundation is open-source and self-hostable, prioritizing ease of use and flexibi
 - Team Name: Fundation
 - Contact: Victor Stallone Peck (Swen) 
 - Email: swenpeck@outlook.com
-- Website: funation.dev
+- Website: https://www.fundation.dev/
 - Team Members: Victor Stallone Peck (Solo Developer)
 - Code Repos: github.com/swenthebuilder
 
@@ -97,7 +97,7 @@ This section should break the development roadmap down into milestones and deliv
 | 0a. | base module comption| Authentication, Dynamic Blockchain API, UX Refinement.  |
 | 0b. | Documentation & code releash |Detailed documentation and public code release. |
 | 0c. | mini-dapp Nft | Core functionalities for an NFT-based mini-dApp. |
-| 0d. | 4 NFT mini games | Development of four mini-games utilizing the NFT core.|
+| 0d. | 4 NFT mini games | Development of four mini-games utilizing the NFT Module.|
 | 0e. |	Mini-dApp: OpenGov Proposal Landing Page | A landing page for OpenGov proposals. |
 
 ## 📅 Development Roadmap // Budget Breakdown 
