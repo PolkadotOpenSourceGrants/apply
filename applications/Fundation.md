@@ -162,3 +162,4 @@ Additional Information
 Concepts and mock-ups will be provided as they are developed.
 
 <img src="https://raw.githubusercontent.com/swenthebuilder/PapiNextjsBasic/refs/heads/main/nftconcept.jpeg" alt="nftconcept" width="400"/>
+<img src="https://raw.githubusercontent.com/swenthebuilder/PapiNextjsBasic/refs/heads/main/Nftdapp.png" alt="NftDapp" width="400"/>
