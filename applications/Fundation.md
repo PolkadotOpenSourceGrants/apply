@@ -144,8 +144,8 @@ All code and assets, including the landing page for the bounty-manager mini-dApp
 
 | Category | Item | Cost | Amount | Total | Description |
 | --- | ---- | --- | --- | --- | ---|
-| Personell | Full-Stack Developer | 30,000 USD | 1 FTE | 30,000 USD | Solo builder handling everything from design and UX to front-end and back-end architecture. |
-| --- | --- | --- | **Total** | **30,000 USD** |  |
+| Personell | Full-Stack Developer | 28,000 USD | 1 FTE | 28,000 USD | Solo builder handling everything from design and UX to front-end and back-end architecture. |
+| --- | --- | --- | **Total** | **28,000 USD** |  |
 
 
 ## Future Plans
