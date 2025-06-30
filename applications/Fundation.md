@@ -171,3 +171,5 @@ Concepts and mock-ups will be provided as they are developed.
 
 <img src="https://raw.githubusercontent.com/swenthebuilder/PapiNextjsBasic/refs/heads/main/nftconcept.jpeg" alt="nftconcept" width="400"/>
 <img src="https://raw.githubusercontent.com/swenthebuilder/PapiNextjsBasic/refs/heads/main/Nftdapp.png" alt="NftDapp" width="400"/>
+basic layout custom icons and graphics will be made later
+<img src="https://raw.githubusercontent.com/swenthebuilder/PapiNextjsBasic/refs/heads/main/opengov.png" alt="Opengov" width="400"/>
