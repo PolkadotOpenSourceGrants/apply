@@ -88,7 +88,7 @@ This section should break the development roadmap down into milestones and deliv
 
 - **Estimated Duration:** 3 months
 - **Full-Time Equivalent (FTE):**  FTE of 1.0
-- **Total Costs:** $30,000 USD
+- **Total Costs:** $28,000 USD
 
 > Note that deliverables 0a to 0e are mandatory. Please adapt their specification to your project.
 
@@ -98,7 +98,8 @@ This section should break the development roadmap down into milestones and deliv
 | 0b. | Documentation & code releash |Detailed documentation and public code release. |
 | 0c. | mini-dapp Nft | Core functionalities for an NFT-based mini-dApp. |
 | 0d. | 4 NFT mini games | Development of four mini-games utilizing the NFT Module.|
-| 0e. |	Mini-dApp: OpenGov Proposal Landing Page | A landing page for OpenGov proposals. |
+| 0e. |	Mini-dApp: OpenGov Proposal | OpenGov proposal functionality |
+| 0f. |	Mini-dApp: bounty-manager | Bounty creation and management via OpenGov |
 
 ## 📅 Development Roadmap // Budget Breakdown 
 
@@ -117,11 +118,11 @@ This section should break the development roadmap down into milestones and deliv
 
 ### Milestone 2: NFT Mini-dApp & Games
 - Includes: Deliverables 0c & 0d
-- Duration: 1.5 months
-- Cost: $17,000
+- Duration: 1 months
+- Cost: $12,000
 
 ### Deliverables:
-All code, assets, landing pages, and any associated smart contracts for four mini-games: a side-scroller runner, a fighting game, a tower defense game, and a shooting range.
+All code, assets, landing pages, and any associated smart contracts for four mini-games: a side-scroller runner, a fighting game.
 
 ### Milestone 3: OpenGov Proposal Mini-dApp
 - Includes: Deliverable 0e
@@ -131,6 +132,13 @@ All code, assets, landing pages, and any associated smart contracts for four min
 ### Deliverables:
 All code and assets, including the landing page for the OpenGov proposal mini-dApp.
 
+### Milestone 4: bounty-manager Mini-dApp
+- Includes: Deliverable 0f
+- Duration: 2 weeks
+- Cost: $3,000
+
+### Deliverables:
+All code and assets, including the landing page for the bounty-manager mini-dApp
 
 ### total 3 months 
 
