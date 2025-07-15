@@ -57,7 +57,7 @@ flowchart TB
 ```
 
 
-#### PoC and High-Level Workflow
+### PoC and High-Level Workflow
 
 Polkabind in its current state is a fully functional PoC that leverages Subxt coupled with a simple façade, and Swift bindings, all in a light Swift Package ready to be imported (via URL or downloaded in local) in Xcode in any iOS project.
 
@@ -117,7 +117,7 @@ flowchart TD
   class D2 release
   ```
   
-#### The tutorial
+### The tutorial
 
 The [Polkabind repository](https://github.com/Polkabind/polkabind) features an example iOS app that does a simple token transfer. The app doesn't contain the Polkabind Swift package, so the user can import it as any Swift Package through Xcode and the SPM (Swift Package Manager). A step by step tutorial on how to achieve that is in the Polkabind README, illustrated with screenshots.
 
@@ -137,7 +137,7 @@ I've learned from the classes I took in PBA (Polkadot Blockchain Academy) about 
 
 *Subxt* is what makes *Polkabind* unique: instead of reinventing the wheel, why not leveraging Subxt to other languages, no room for interpretation, no room for reimplementation, only one source of truth which is Subxt, wrapped nicely for other languages.
 
-#### The back story
+### The back story
 
 Packaging Rust binaries as libraries that can be imported by other languages was a subject I was passionate about even before my interest in Polkadot. After the PBA Lucerne, I was fully aware of the potential of *Subxt* and I started researching ways to package it for other languages, and if it's a good alternative to libraries developed from scratch.
 
@@ -166,7 +166,7 @@ This made it clear for me that exposing a separate API/façade on top of *Subxt*
 
 Wassim Mansouri
 
-#### LinkedIn Profiles (if available)
+### LinkedIn Profiles (if available)
 
 - https://www.linkedin.com/in/wassimans
 
