@@ -255,10 +255,7 @@ This is the overall scope of wallet-level API that Polkabind aims to deliver by 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
 | 0a. | License | Apache 2.0 (dual-licensed MIT/Apache optional).|
-| 0b. | Documentation | We will provide:
-  </br> **Inline documentation** in Rust (`///` comments) covering every public API, published on docs.rs.
-  </br> **Generated API reference** for Swift (DocC) and Kotlin (KDoc/Javadoc), automatically built and published via our CI pipeline (GitHub Pages or similar). 
-  </br> A **step-by-step tutorial** showing how to import the Polkabind Swift and Kotlin packages into the provided example iOS and Android apps and perform some operations.|
+| 0b.    | **Documentation**                                            | <ul><li>**Inline documentation** in Rust (`///` comments) covering every public API, published on docs.rs.</li><li>**Generated API reference** for Swift (DocC) and Kotlin (KDoc/Javadoc), automatically built and published via our CI pipeline (GitHub Pages or similar).</li><li>A **step-by-step tutorial** showing how to import the Polkabind Swift and Kotlin packages into the provided example iOS and Android apps and perform some operations.</li></ul> |
 | 0c. | Testing & Testing Guide | Rust unit tests cover every façade function and error path, Swift (XCTest) & Kotlin (JUnit) binding tests drive the generated APIs, and a guide describing how to run all tests locally.|
 | 0d. | Docker | We will provide a Dockerfile that spins up: a Chopsticks local Polkadot dev node (Instant finality), and runs Rust, Swift and Kotlin tests against that node.|
 | 0e. | Article | We will publish an **article** giving a 360° overview of Polkabind, its architecture, and a complete tutorial of how to develop a basic native app wallet targeting Polkadot with Polkabind. |
