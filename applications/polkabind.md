@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-[Polkabind](https://github.com/Polkabind/polkabind) - Seamless interaction with any Polkadot SDK based chain for Swift, Kotlin, Javascript, Python and more!
+[Polkabind](https://polkabind.dev) - Seamless interaction with any Polkadot SDK based chain for Swift, Kotlin, Javascript, Python and more!
 
 `Polkabind` is a library that opens the Polkadot ecosystem to programming languages other than Rust. It exposes mainly standard wallet-level functionality (key management, balance queries, extrinsic building, signing, RPC, event subscriptions and more) to other languages (Swift, Kotlin, Python, Javascript and more) by exposing Parity's [Subxt](https://github.com/paritytech/subxt) library through FFI (foreign language interface).
 
