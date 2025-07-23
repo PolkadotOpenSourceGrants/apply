@@ -59,13 +59,13 @@ flowchart TB
 
 ### PoC and High-Level Workflow
 
-Polkabind in its current state is a fully functional PoC that leverages Subxt coupled with a simple façade, and Swift bindings, all in a light Swift Package ready to be imported (via URL or downloaded in local) in Xcode in any iOS project.
+Polkabind in its current state is a fully functional PoC that leverages Subxt coupled with a simple façade, Swift/iOS and Kotlin/Android bindings, all in a light package (for each language) ready to be imported (via URL or downloaded in local) in Xcode or Android Studio.
 
 The whole process is **fully automated** and triggers on every new tag (version) push to the Polkabind repository:
 
-- compiling the binary that contains Subxt + the Rust façade, for every supported platform (currently iOS).
-- generating bindings for target languages (currently Swift).
-- versioning and packaging the result into target languages packages (currently Swift Packages), where each package is pushed into its own repository, so it can be imported just by pointing the package manager to the package's Github repository.
+- compiling the binary that contains Subxt + the Rust façade, for every supported platform (currently iOS and Android).
+- generating bindings for target languages (currently Swift and Kotlin).
+- versioning and packaging the result into target languages packages (currently Swift and Kotlin Packages), where each package is pushed into its own repository, so it can be imported just by pointing the package manager to the package's Github repository.
 
 This is a high level workflow showcasing the production of a Swift Polkabind package:
 
@@ -119,7 +119,7 @@ flowchart TD
   
 ### The tutorial
 
-The [Polkabind repository](https://github.com/Polkabind/polkabind) features an example iOS app that does a simple token transfer. The app doesn't contain the Polkabind Swift package, so the user can import it as any Swift Package through Xcode and the SPM (Swift Package Manager). A step by step tutorial on how to achieve that is in the Polkabind README, illustrated with screenshots.
+The [Polkabind repository](https://github.com/Polkabind/polkabind) features an example iOS and Android app that does a simple token transfer. A step by step tutorial on how to run the examples is in the Polkabind README, illustrated with screenshots.
 
 ### Ecosystem Fit
 
@@ -155,7 +155,7 @@ This made it clear for me that exposing a separate API/façade on top of *Subxt*
 
 ## Team
 
-- **Team Name:** For now it's a solo-project, lead by me: Wassim Mansouri.
+- **Team Name:** Wassim Mansouri EI (business officially registered under my name in France).
 - **Contact Name:** Wassim Mansouri.
 - **Contact Email:** wassim@polkabind.dev
 - **Website:** 
@@ -175,8 +175,7 @@ Wassim Mansouri
 - https://github.com/Polkabind
 - https://github.com/Polkabind/polkabind
 - https://github.com/Polkabind/polkabind-swift-pkg
-
-Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere are also fine.
+- https://github.com/Polkabind/polkabind-kotlin-pkg
 
 - https://github.com/wassimans
 
@@ -196,11 +195,11 @@ And through my passion for software engineering, Web3, Polkadot and the Rust pro
 
 ## Development Status
 
-As mentioned before, [Polkabind](https://github.com/Polkabind/polkabind) started with a community expressed need, and is now a fully implemented and tested PoC that publishes a ready to use Swift package that exposes a simple token transfer functionality.
+As mentioned before, [Polkabind](https://github.com/Polkabind/polkabind) started with a community expressed need, and is now a fully implemented and tested PoC that publishes ready to use Swift and Kotlin packages that exposes a simple token transfer functionality.
 
 ## Development Roadmap
 
-This is the overall scope of wallet-level API that Polkabind aims to deliver by the end of a three-month duration. The API will be developped in Rust, using Subxt under the hood, and exposed to Swift and Kotlin.
+This is the overall scope of wallet-level API that Polkabind aims to deliver by the end of a three-month duration. The API will be developed in Rust, using Subxt under the hood, and exposed to Swift and Kotlin.
 
 | Category               | Feature / Task                           |
 |------------------------|------------------------------------------|
