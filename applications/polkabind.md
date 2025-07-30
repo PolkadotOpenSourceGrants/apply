@@ -185,7 +185,7 @@ I'm a software engineer with more than ten years of professional experience. I'm
 
 My interest for Web3 began about two years ago, I took a class here in France to learn about blockchain development in the EVM, then discovered Polkadot and Substrate and was hooked ever since.
 
-I got the chance to work as contractor protocol developer on the [Archtehic project](https://www.archethic.net), a project that is discontinued, then right after that, I joined and graduated from the Polkadot Blockchain Academy in Lucerne 2025, and that marked my full commitment for the Polkadot community.
+I got the chance to work as contractor protocol developer on the [Archtehic project](https://www.archethic.net), a project that is discontinued, then right after that, I joined and graduated from the Polkadot Blockchain Academy in [Lucerne](https://kodadot.xyz/ahp/u/12jBu2LKRZhvidbLaJ6TKdov3NuNJQejiXz8J6UjG3skKW16) 2025, and that marked my full commitment for the Polkadot community.
 
 Right after the PBA, and due to my experience working with the Elixir programming language in a blockchain project (Archtehic), I was accepted by the [Jamixir](https://github.com/jamixir) team to contribute to the project, which is a *JAM* implementation in Elixir. I had the chance to get many of my PRs merged (currently all JAM implementation repositories are private as per the JAM protocol development guidelines).
 
