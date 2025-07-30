@@ -247,9 +247,12 @@ This is the overall scope of wallet-level API that Polkabind aims to deliver by 
 
 ### Overview
 
+- **Team members:** 1x full time software engineer (software development, QA, DevOps)
+- **Average engineering rate:** $60/hour including ancillary costs (taxes) 
+- **Full time assumptions:** 160 working hours/month per team member
 - **Estimated Duration:** 3 months
 - **Full-Time Equivalent (FTE):**  3.0 FTE (three 1 FTE-month)
-- **Total Costs:** 30,000 USD
+- **Total Costs:** 28,800 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -263,12 +266,12 @@ This is the overall scope of wallet-level API that Polkabind aims to deliver by 
 
 ### Budget Breakdown (Example, please adapt)
 
-| Category   | Item                       | Cost   | Amount  | Total          | Description                                     |
-|------------|----------------------------|--------|---------|----------------|-------------------------------------------------|
-| Personnel  | Lead Developer / DevOps    | 10,000 | 1,5 FTE | 15,000         | Rust API, Swift & Kotlin bindings, CI pipelines |
-| Personnel  | Mobile Developer           | 10,000 | 1.0 FTE | 10,000         | Example iOS and Android apps                    |
-| Personnel  | QA Engineer                | 10,000 | 0.5 FTE | 5,000          | Tests, documentation                            |
-| —          | —                          | —      | —       | **30,000 USD** |                                                 |
+| Category   | Item                       | Amount  | Total          | Description                                     |
+|------------|----------------------------|---------|----------------|-------------------------------------------------|
+| Personnel  | Lead Developer / DevOps    | 1,5 FTE | 14,400         | Rust API, Swift & Kotlin bindings, CI pipelines |
+| Personnel  | Mobile Developer           | 1.0 FTE | 9,600          | Example iOS and Android apps                    |
+| Personnel  | QA Engineer                | 0.5 FTE | 4,800          | Tests, documentation                            |
+| —          | —                          | —       | **28,800 USD** |                                                 |
 
 
 ## Future Plans
