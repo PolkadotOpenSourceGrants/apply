@@ -4,8 +4,6 @@
 
 [*https://skullgoldgame.xyz*](https://skullgoldgame.xyz) 
 
----
-
 ## **🌟 Project Overview**
 
 **Tagline:**  
@@ -52,8 +50,6 @@ Beyond the gameplay, **Skull & Gold** is deeply social. Players can **share achi
 **Pitch:**  
 [https://www.renderforest.com/share/gm-projects/b3a6ed139d1dbde4cc559cb953c660fa](https://www.renderforest.com/share/gm-projects/b3a6ed139d1dbde4cc559cb953c660fa) 
 
----
-
 ## **🔍 Project Details**
 
 **Technology Stack:**
@@ -91,15 +87,11 @@ Beyond the gameplay, **Skull & Gold** is deeply social. Players can **share achi
 * Created in collaboration with **SKULLZ** (design partner)
 
 **Out of Scope (for now):**
-
-* No native mobile app in this stage
-
-* No PvP or real-time multiplayer yet
-
-* No internal NFT marketplace in this stage (we will collab with ecosystem marketplaces meanwhile)  
-  ---
-
-  ## **🧩 Ecosystem Fit**
+- No native mobile app in this stage
+- No PvP or real-time multiplayer yet
+- No internal NFT marketplace in this stage (we will collab with ecosystem marketplaces meanwhile)  
+  
+## **🧩 Ecosystem Fit**
 
 **Positioning:**  
 Skull & Gold brings an accessible, gamified NFT experience to Polkadot Asset Hub, aiming to onboard non-crypto gamers via hybrid login and enjoyable gameplay. It creates a fun and functional use case for NFTs in gaming.
@@ -142,7 +134,7 @@ Finally, our collaboration with **projects across the Polkadot ecosystem** will 
 **Similar Projects:**  
 There are no games in Polkadot offering this mix of point & click gameplay, rhythm mechanics, and native NFTs. Skull & Gold fills this gap.
 
----
+
 
 ## **👥 Team**
 
@@ -173,9 +165,7 @@ There are no games in Polkadot offering this mix of point & click gameplay, rhyt
 
 Our team has extensive experience at Polkadot and in starting and leveling projects. From creating startups like Soft.Law (funded by the Web3 Foundation), video game studios Echo Entertainment, Lumen Games, and Bullet Master, to event organisation for as a Polkadot Sponsor at NFT Paris, Istanbul Blockchain Week, VDS, and creating communities for Apillon, Neurolanche, Mythos and more. Our team has the skills to take this project to the next level.
 
----
-
-## **📊 Development Status**
+## 📊 Development Status
 
 * Backend functional with wallet and Apillon login
 
@@ -183,9 +173,7 @@ Our team has extensive experience at Polkadot and in starting and leveling proje
 
 * UI design 40% complete
 
-  ---
-
-  ## **📅 Development Roadmap**
+## **📅 Development Roadmap**
 
 **Overview**
 
@@ -202,9 +190,7 @@ Our team has extensive experience at Polkadot and in starting and leveling proje
 | 2 | NFT Smart Contracts | NFT minting, claiming logic, and game integration |
 | 3 | Polish & Integrations | UI polish, wallet connections, Web2 auth (Apillon), performance improvements |
 
-  ---
-
-  ## **💰 Budget Breakdown**
+## **💰 Budget Breakdown**
 
 | Milestone | Deliverables | Cost (USD) | Estimated Completion |
 | ----- | ----- | ----- | ----- |
@@ -223,19 +209,15 @@ Our team has extensive experience at Polkadot and in starting and leveling proje
 
 * Community \+ Marketing (Free)
 
-  ## ---
+## **🚀 Go-To-Market Strategy**
 
-  ## **🚀 Go-To-Market Strategy**
+We’ll begin by building hype across social media and activating both Web2 and Web3 communities. In collaboration with **NFT Mozaic**, we’ll launch an **Airlyft campaign** where users complete missions to earn NFTs and gain early access to the **Skull & Gold waitlist**.
 
-## We’ll begin by building hype across social media and activating both Web2 and Web3 communities. In collaboration with **NFT Mozaic**, we’ll launch an **Airlyft campaign** where users complete missions to earn NFTs and gain early access to the **Skull & Gold waitlist**.
+At the same time, we’ll work with **Web3 gaming communities** like **ITEMZ Mexico**, and engage **universities and Web2 gamers** to attract a younger audience. This hybrid strategy will help onboard new players into Web3 through fun, accessible gameplay.
 
-## At the same time, we’ll work with **Web3 gaming communities** like **ITEMZ Mexico**, and engage **universities and Web2 gamers** to attract a younger audience. This hybrid strategy will help onboard new players into Web3 through fun, accessible gameplay.
+With support from **Unique Network**, **Polkadot Mexico**, **DOT Americas**, and **Le Nexus**, we’ll also collaborate with **official Polkadot accounts** (English and Spanish) to promote Skull & Gold pre-launch through key events like **ETH Mexico, Polkadot Decoded, ETH Latam**, and more.
 
-## With support from **Unique Network**, **Polkadot Mexico**, **DOT Americas**, and **Le Nexus**, we’ll also collaborate with **official Polkadot accounts** (English and Spanish) to promote Skull & Gold pre-launch through key events like **ETH Mexico, Polkadot Decoded, ETH Latam**, and more.
-
-## Once the community is strong and engaged, we’ll launch the beta with rewards and continue growing the game alongside our players.
-
-## ---
+Once the community is strong and engaged, we’ll launch the beta with rewards and continue growing the game alongside our players.
 
 ## **🎯 Metrics**
 
@@ -245,8 +227,6 @@ Upon Game launch we aim to reach:
 - Discord Users: 500-1000 users  
 - Twitter followers: 500 \- 1000 followers  
 - NFT minted: 150-200
-
-## ---
 
 ## **🔮 Future Plans**
 
@@ -261,8 +241,6 @@ After the Fast-Grant:
 * Explore PvP and clan mechanics with reward systems
 
 * Seek follow-up funding from ecosystem grants or VCs
-
-  ---
 
   ## **ℹ️ Additional Information**
 
