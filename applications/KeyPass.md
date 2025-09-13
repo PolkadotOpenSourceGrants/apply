@@ -130,7 +130,7 @@ KeyPass is identity middleware for Polkadot. It enables dApps, DAOs, and learnin
 | 0a | License | MIT |
 | 0b | Documentation | Inline docs + tutorial for login integration |
 | 0c | Testing & Guide | Unit + integration tests, guide for running them |
-| 0d | Docker | Dockerfile to spin up SDK demo and contracts locally |
+| 0d | Docker | Dockerfile to spin up SDK demo locally |
 | 0e | Article | Publish article on Polkadot Forum + Medium explaining SDK v2 |
 | 1 | SDK v2 with Multi-Wallet Support | Support Polkadot.js, SubWallet, Nova, Ledger + React/Vue UI components |
 
