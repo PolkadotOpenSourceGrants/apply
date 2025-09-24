@@ -12,13 +12,6 @@ The fact that Web3 services are accessed via legacy Web2 Internet infrastructure
 
 Video pitch: [https://youtu.be/AL8CFS\_T3Mk](https://youtu.be/AL8CFS_T3Mk)
 
-Please provide the following:
-
-- ✅ If the name of your project is not descriptive, a tagline (one sentence summary)  
-- ✅ A brief description of your project  
-- ✅ An indication of how your project relates to / integrates into Polkadot (SDK) / Kusama  
-- ✅ An indication of why your team is interested in creating this project
-
 ### Project Details
 
 #### Overview
@@ -120,16 +113,6 @@ Registrars are expected to attract people to the network via their web sites and
 
 This project is not a Polkadot’s alternative to Ethereum’s ENS and eth.limo. Eth.limo makes web3 domains resolvable via legacy web2 infrastructure (centralized DNS and CA), while we want to be able to resolve web3 domains without such infrastructure.
 
-We expect the teams to already have a solid idea about your project's expected final state. Therefore, we ask the teams to submit (where relevant):
-
-- ✅ An overview of the technology stack to be used  
-- ✅ Documentation of core components, protocols, architecture, etc. to be deployed  
-- PoC/MVP or other relevant prior work or research on the topic  
-- Mockups/designs of any UI components  
-- ✅ Data models / API specifications of the core functionality  
-- ✅ What your project is *not* or will *not* provide or implement  
-  - This is a place for you to manage expectations and clarify any limitations that might not be obvious
-
 ### Ecosystem Fit
 
 #### Target audience
@@ -143,15 +126,6 @@ As for Internet registrars, they would be able to vote whether new top-level dom
 While there are existing projects that can be considered building blocks of Internet infrastructure (e.g. Kilt, PolkaIdentity), they are focused on decentralized identities. Our project is specifically focused on Internet domain names and the integration with the existing Internet ecosystem — we want Web3 domain names to actually be resolvable in the browser.
 
 Help us locate your project in the Polkadot/Kusama landscape and what problems it tries to solve by answering each of these questions:
-
-- Where and how does your project fit into the ecosystem?  
-- ✅ Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?  
-- ✅ What need(s) does your project meet?  
-- How did you identify these needs? Please provide evidence in the form of (scientific) articles, forum discussions, case studies, or raw data.  
-- ✅ Are there any other projects similar to yours in the Polkadot/Kusama ecosystem? Make sure to at least check the [Polkadot Forum](https://forum.polkadot.network/), the [wiki's Tech Stack doc](https://wiki.polkadot.network/docs/build-open-source) and [OpenGov](https://polkadot.subsquare.io/referenda?status=executed&is_treasury=true).  
-  - If so, how is your project different? Please identify and assess any projects addressing the same need and explain how your project is distinct. Feel free to include applicable research data, statistics, or metrics.  
-  - If not, please indicate why such a project might not have been possible, successful, or attempted.  
-- ✅ Are there any projects similar to yours in related ecosystems?
 
 ## Team
 
@@ -273,18 +247,8 @@ So far we've built a community of 2k+ people in total across all social media ch
 
 Apart from the community we have quite a few contacts from the Web3-related events. We plan to reach out to them as well.
 
-Please include here
-
-- ✅ how you intend to finance the project's long-term maintenance and development,  
-- ✅ how you intend to use, enhance, and promote your project in the short term, and  
-- ✅ the team's long-term plans and intentions in relation to it.
-
 ## Additional Information
 
 We have submitted this project for the Polkadot Fast Grant but were suggested to apply for the Open Source Grant instead. This is a reworked version of the application that includes registrars and restructures the budget accordingly. You can find the old application [here](https://github.com/Polkadot-Fast-Grants/apply/pull/96).
 
 Here you can also add any additional information that you think is relevant to this application but isn't part of it already, such as:
-
-- Work you have already done  
-- If there are any other teams who have already contributed (financially) to the project  
-- ✅ Please declare if you have submitted this product for funding to any other entities, whether you got funded, how much you got funded, and provide any other relevant details.
