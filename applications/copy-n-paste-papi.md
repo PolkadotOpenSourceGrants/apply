@@ -113,7 +113,7 @@ The platform delivers significant value as a comprehensive PAPI development envi
 
 ## Development Roadmap
 
-**Duration:** 3 months | **Budget:** $15,000 USD | **Payment:** $5,000 upfront (for v1 already developed), $10,000 upon contract interaction completion
+**Duration:** 3 months | **Budget:** $15,000 USD | **Payment:** $5,000 (for v1 already developed), $10,000 upon contract interaction completion
 
 This MVP focuses on core contract interaction capabilities, establishing the foundation for future backend infrastructure.
 
@@ -125,7 +125,7 @@ This MVP focuses on core contract interaction capabilities, establishing the fou
 
 
 ### Milestone 1 – Finalise Existing Tool (Month 1)
-**Payment:** $5,000 USD upfront
+**Payment:** $5,000 USD
 
 |  Number | Deliverable                     | Specification                                                                                                                                                                                                     |
 | ------: | ------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -149,7 +149,7 @@ This MVP focuses on core contract interaction capabilities, establishing the fou
 | Category | Item | Cost | Amount | Total | Description |
 | --- | ---- | --- | --- | --- | ---|
 | Personnel | Sole Developer | 15,000 USD | 1 FTE | 15,000 USD | Leading project development, implementing contract interaction features, UI/UX improvements, documentation, testing and maintenance |
-| --- | --- | --- | **Total** | **15,000 USD** | **Payment Schedule:** $5,000 upfront (for v1 already developed), $10,000 upon contract interaction completion |
+| --- | --- | --- | **Total** | **15,000 USD** | **Payment Schedule:** $5,000 (for v1 already developed), $10,000 upon contract interaction completion |
 
 ## Success Metrics
 
