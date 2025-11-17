@@ -29,7 +29,7 @@ With **Swush v2**, we are expanding this foundation into a full routing engine:
 
 | Feature | Description |
 |---------|-------------|
-| 🔄 **Cross-chain swaps** | Best asset swap routes across Asset Hub, Hydration, Moonbeam, Acala, Bifrost |
+| 🔄 **Cross-chain swaps** | Best asset swap routes across Asset Hub, Hydration, Acala, Bifrost |
 | 🌉 **Cross-ecosystem bridging** | Route and swap assets via Chainflip to Arbitrum and Solana |
 | ⚡ **Direct perps market access** | One-click deposits into Hyperliquid after swaps |
 | 🎯 **Reward-driven liquidity** | Incentives like vouchers, NFTs, or staking prompts on destination chains |
@@ -88,7 +88,7 @@ These NFTs are more than collectibles—they’re brand anchors and functional r
 While tools like [Turtle.cool](https://turtle.cool/) provide basic cross-chain transfers and swaps, Swush differentiates itself as:
 
 - A **comprehensive multi-hop swap router** that compares asset swap routes across various DEXs (Asset Hub, Hydration, Bifrost) rather than just a bridge
-- **Deeply integrated** with multiple parachain DEXs and liquidity pools via XCM (Hydration, Moonbeam, Bifrost, Acala)
+- **Deeply integrated** with multiple parachain DEXs and liquidity pools via XCM (Hydration, Asset Hub, Bifrost, Acala)
 - **Cross-ecosystem enabled** with bridging capabilities via Chainflip to Arbitrum and Solana
 - **Perps market gateway** providing direct access to Hyperliquid derivatives trading
 - **Engagement engine** combining ecosystem incentives, and brand loyalty mechanics through reward-driven actions and NFT-based community building
