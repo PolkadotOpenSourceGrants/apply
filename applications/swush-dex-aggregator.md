@@ -329,7 +329,6 @@ We have completed the MVP of Swush v1 as per [Web3 foundation grant](https://git
 | 5. | Ethereum EVM support | Extended evm wallet support for Ethereum/Arbitrum and Solana |
 | 6. | Chainflip integration for Arbitrum and Solana | Cross ecosystem asset swaps for Asset Hub based assets like DOT/USDC/USDT to Arbitrum and Solana with fee estimation, slippage protection, and transaction status tracking |
 | 7. | Hyperliquid referral on-ramp | One-click Asset Hub/Polkadot(DOT/USDC/USDT) → Arbitrum(with chainflip) → Hyperliquid deposit |
-| 8. | Moonbeam integration | Extend support for moonbeam assets |
 
 - **Estimated Duration:** 2-2.5 months
 - **Full-Time Equivalent (FTE):** 2.0
