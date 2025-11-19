@@ -29,7 +29,7 @@ With **Swush v2**, we are expanding this foundation into a full routing engine:
 
 | Feature | Description |
 |---------|-------------|
-| 🔄 **Cross-chain swaps** | Best asset swap routes across Asset Hub, Hydration, Moonbeam, Acala, Bifrost |
+| 🔄 **Cross-chain swaps** | Best asset swap routes across Asset Hub, Hydration, Acala, Bifrost |
 | 🌉 **Cross-ecosystem bridging** | Route and swap assets via Chainflip to Arbitrum and Solana |
 | ⚡ **Direct perps market access** | One-click deposits into Hyperliquid after swaps |
 | 🎯 **Reward-driven liquidity** | Incentives like vouchers, NFTs, or staking prompts on destination chains |
@@ -88,7 +88,7 @@ These NFTs are more than collectibles—they’re brand anchors and functional r
 While tools like [Turtle.cool](https://turtle.cool/) provide basic cross-chain transfers and swaps, Swush differentiates itself as:
 
 - A **comprehensive multi-hop swap router** that compares asset swap routes across various DEXs (Asset Hub, Hydration, Bifrost) rather than just a bridge
-- **Deeply integrated** with multiple parachain DEXs and liquidity pools via XCM (Hydration, Moonbeam, Bifrost, Acala)
+- **Deeply integrated** with multiple parachain DEXs and liquidity pools via XCM (Hydration, Asset Hub, Bifrost, Acala)
 - **Cross-ecosystem enabled** with bridging capabilities via Chainflip to Arbitrum and Solana
 - **Perps market gateway** providing direct access to Hyperliquid derivatives trading
 - **Engagement engine** combining ecosystem incentives, and brand loyalty mechanics through reward-driven actions and NFT-based community building
@@ -138,7 +138,6 @@ It's not just a DEX aggregator, it's a **liquidity distribution engine** for par
     - Hydration
     - Bifrost
     - Acala
-    - Moonbeam.
 - Executes XCM message building and runtime dry-runs for transaction validation.
 
 **Multi-Wallet & Multi-Network Manager**
@@ -169,7 +168,7 @@ It's not just a DEX aggregator, it's a **liquidity distribution engine** for par
 ### User Flow
 **Milestone 1: Cross-chain swaps within Polkadot ecosystem**
 
-*(Asset Hub ↔ Hydration ↔ Moonbeam ↔ Bifrost, with multi-wallet & fee estimation)*
+*(Asset Hub ↔ Hydration ↔ Acala ↔ Bifrost, with multi-wallet & fee estimation)*
 
 1. **User Connects Wallet**
     - Substrate or EVM wallet detection (multi-wallet support)
@@ -302,7 +301,7 @@ We have completed the MVP of Swush v1 as per [Web3 foundation grant](https://git
 | 0c. | Testing and Testing Guide | Core functions will be tested using chopsticks for multi network simulation to test the transactions to test the core functionality and unit tests wherever applicable. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone |
 | 0e. | Article | We will publish a documentation that explains how Swush enables seamless cross-chain DEX aggregation on Polkadot |
-| 1. | Core router: cross chain swaps | Fetches best asset rates for cross chain swaps across Asset Hub, Hydration, Moonbeam, Bifrost, Acala |
+| 1. | Core router: cross chain swaps | Fetches best asset rates for cross chain swaps across Asset Hub, Hydration, Bifrost, Acala |
 | 2. | Transaction tracker | Track swap status for multi-hop XCM transfers and asset swaps |
 | 3. | Route selector and Total Fee Estimation | Select source & destination chains with comprehensive fee estimate including XCM costs |
 | 4. | Multi-wallet enablement | Support for both Substrate and EVM-based wallets |
