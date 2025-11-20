@@ -134,7 +134,7 @@ This project will be executed in three distinct milestones, each with clearly de
 
 | Category | Item | Cost | Amount | Total | Description |
 | --- | --- | --- | --- | --- | --- |
-| Personnel | Lead Blockchain Developer | 10,000 USD | 2.25 FTE | 22,500 USD | Responsible for overall architecture, core development and documentation.|
+| Personnel | Lead Blockchain Developer | 10,000 USD | 2.25 months | 22,500 USD | Responsible for overall architecture, core development and documentation.|
 | \--- | \--- | \--- | **Total** | **22,500 USD** | |
 
 ## Future Plans
