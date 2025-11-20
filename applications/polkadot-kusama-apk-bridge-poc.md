@@ -80,7 +80,7 @@ This project will be executed in three distinct milestones, each with clearly de
 ### Overview
 
 *   **Estimated Duration:** - 3 Months
-*   **Full-Time Equivalent (FTE):** - 2.25 FTE
+*   **Full-Time Equivalent (FTE):** - 0.75 FTE
 *   **Total Costs:** - 22,500 USD
 
 ### Milestone 1: Implementation of BLS12-381 based APK Proofs
