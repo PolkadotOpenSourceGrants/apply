@@ -14,7 +14,7 @@ Pallet runs on any parachain or relay chain; mobile signer uses standard Substra
 **Why we're doing this**  
 Sovereign bond tokenization grew 260% in 2024 (€3B issued), with governments from Slovenia to Paraguay actively deploying blockchain infrastructure. However, all existing RWA platforms require browser extensions—which don't work on iOS/Android mobile browsers. This creates a technical barrier for institutions that increasingly rely on mobile workflows. We're building the first mobile-native signing infrastructure for Substrate RWA tokenization.
 
-*[Watch 60-second demo – November 2025](https://www.loom.com/share/dd334230db154f9891f46664ae02aec4)*
+*[Watch 60-second demo – November 2025](https://www.loom.com/share/dd334230db154f9891f46664ae02aec4)*  
 ![Clad Signer Demo – Native iOS & Android](https://cdn.loom.com/sessions/thumbnails/dd334230db154f9891f46664ae02aec4-9e6c0699711bd8ff-full-play.gif#t=0.1)
 
 **What's working today (pre-funding):**
