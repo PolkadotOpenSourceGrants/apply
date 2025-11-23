@@ -1,191 +1,308 @@
-# PAPI Copy‑n‑Paste
+# PAPI Copy-n-Paste
 
 ## Project Overview
 
-* **Tagline:** *Stop scrolling through docs – start building.*
-* **Description:** PAPI Copy‑n‑Paste is a development platform for the Polkadot‑API (PAPI) that combines interactive documentation, live blockchain interaction, and code generation. Developers can explore pallets and extrinsics, execute transactions from connected wallets, query live blockchain data, subscribe to real-time state changes, and interact with smart contracts (ink! and EVM) across multiple chains. The upcoming v2.0 will add contract interaction capabilities including address validation, metadata fetching, method execution, event monitoring, and storage inspection.
-* **Integration with Polkadot/Kusama:** The app uses the PAPI (Polkadot API) library to connect to multiple Substrate chains (Polkadot, Kusama, Moonbeam, Astar, Acala and others). By generating code that calls PAPI methods, it reduces boilerplate and accelerates dApp development.
-* **Motivation:** PAPI docs and examples are fragmented, forcing developers to jump between resources. This project offers a single interactive playground to learn by doing, reducing context‑switching and speeding up onboarding. Positive forum feedback shows the community values this tool and wants to see it improved and maintained.
+**Tagline:** Stop scrolling through docs – start building.
 
-### Project Details
+**Description:**
+PAPI Copy-n-Paste is a development platform for the Polkadot-API (PAPI) that combines interactive documentation, live blockchain interaction, code generation, and agent-friendly outputs. Developers can explore pallets and extrinsics, execute transactions from connected wallets, query live blockchain data, subscribe to real-time state changes, and interact with smart contracts across multiple chains.
 
-* **Technology stack & architecture:** Next.js web app with TypeScript, Tailwind CSS, and shadcn/ui components. Monorepo structure with core package for chain metadata and PAPI helpers. Turbo and pnpm for build management.
-* **Deliverables:**
+The next stages expand the tool in three directions:
 
-  * **Interactive explorer:** Support for more chains and extrinsics with an intuitive UI and contextual help.
-  * **Live code generator:** Real‑time transaction and storage query snippets with copy‑to‑clipboard and parameter validation.
-  * **CLI integration:** A built‑in interface for `create‑papi‑app` so users can scaffold projects directly from the webapp.
-  * **Contract interaction module:** Remix‑style interface for interacting with ink! and EVM contracts across multiple chains, including metadata fetching, method execution, event monitoring, and storage inspection.
-  * **Documentation & tutorials:** A getting‑started guide and examples showing how to use the generated code in real projects.
-  * **Tests and deployment:** Unit/integration tests and Dockerfiles for reproducible builds.
-* **Limitations:** Client-side contract interaction and development tools only. Excludes full IDE features, debugging, and version control. Wallet integration via browser extensions.
+1. **Agentic developer workflows** via an MCP-style API server and AI-optimised exports.
+2. **A Remix-style, in-browser contract IDE** for ink! and Solidity interaction.
+3. **An AI-assisted Substrate pallet builder** that generates pallets from structured spec sheets and large test suites using a TDD loop.
 
-### Ecosystem Fit
+**Integration with Polkadot/Kusama:**
+The app uses the PAPI library to connect to multiple Substrate chains (Polkadot, Kusama, Polkadot Asset Hub, Polkadot People, Moonbeam, Astar, Acala, Hydration, and others). By generating code that calls PAPI methods, it reduces boilerplate and accelerates dApp development. Standardised AI-friendly markdown exports plus an MCP server will make PAPI easier to consume from tools like Claude, Cursor, Continue, and other LLM-powered agents.
 
-Help us locate your project in the Polkadot/Kusama landscape and what problems it tries to solve by answering each of these questions:
+**Motivation:**
+PAPI docs and examples are fragmented, forcing developers to jump between dev.papi.how, GitHub examples, and their editor. This project offers a single interactive playground to learn by doing, reducing context-switching and speeding up onboarding. Feedback from PBA Bali classmates, ecosystem developers, and direct conversations with the PAPI team shows strong demand for an interactive, code-generating learning environment.
+
+---
+
+## Project Details
+
+**Technology stack & architecture:**
+Next.js web app with TypeScript, Tailwind CSS, and shadcn/ui components. Monorepo with a core package for chain metadata and PAPI helpers. Turbo and pnpm for build management.
+
+### Deliverables (overall)
+
+**Interactive explorer**
+
+* Expanded chain support including Polkadot, Kusama, Polkadot Asset Hub, Polkadot People, and major parachains (Moonbeam, Astar, Acala, Hydration, Aleph Zero where possible).
+* Intuitive UI for browsing pallets, storage, extrinsics, and events with contextual help and surfaced Rust doc comments.
+
+**Live code generator**
+
+* Real-time transaction and storage query snippets with parameter validation.
+* Idiomatic TypeScript code using PAPI best practices and real parameter values from executed calls.
+
+**Demo / use-case dashboard**
+
+* A gallery of “recipes” (Token transfer dApp, Simple staking dashboard, Governance voting helper, etc.) that:
+
+  * Pre-configure relevant pallets and calls.
+  * Show the full flow end-to-end.
+  * Generate reusable snippets and starter templates.
+
+**CLI integration**
+
+* Built-in interface for `create-papi-app` so users scaffold projects directly from the webapp.
+* Templates aligned with recipes, so devs go from “try in browser” to “clone + run locally”.
+
+**Contract interaction module**
+
+* Remix-style interface for ink! and EVM contracts.
+* Address validation and contract type detection (ink!/EVM).
+* Metadata fetching from explorers, registries, IPFS, manual upload.
+* Dynamic method interface generation with parameter forms.
+* Real-time event monitoring and storage inspection for ink! contracts.
+* Local-first execution, then chain integrations to major parachains.
+
+**In-browser code editor**
+
+* Bidirectional REPL:
+
+  * Use UI to execute actions and generate code.
+  * Edit single-file code inline in browser.
+  * Re-execute and keep UI state in sync.
+* Editor modes for:
+
+  * TypeScript PAPI calls.
+  * ink! contracts (compile, deploy, interact).
+  * Solidity contracts (compile, deploy, interact).
+
+**Agentic tooling integration**
+
+* MCP server exposing PAPI metadata, pallets, calls, and examples for agentic IDE queries.
+* AI-optimised markdown exports capturing:
+
+  * Exact calls performed.
+  * Types and parameter shapes.
+  * Short structured descriptions for LLM context windows.
+* Example prompts and docs on using Copy-n-Paste PAPI with AI agents.
+
+**Searchable docs & inline references**
+
+* Extract Rust doc comments from metadata and pallet crates with links to canonical docs (docs.rs, dev.papi.how).
+* Fuzzy search (⌘K) across pallets, methods, events, and doc comments.
+
+**Documentation & tutorials**
+
+* Getting-started guides for:
+
+  * Queries and extrinsics.
+  * Demo recipes.
+  * Contract IDE usage.
+  * AI agent workflows.
+  * Pallet builder spec-to-tests-to-code pipeline.
+
+**Tests & deployment**
+
+* Unit, integration, and E2E tests for common flows.
+* Dockerfiles for reproducible development and production builds.
+
+**UX & wallet improvements**
+
+* Wallet picker flow when multiple wallets are installed.
+* Core performance + clarity improvements.
+
+**Limitations:**
+Client-side dev and interaction tooling only. No full IDE features, advanced debugging, or version control. Wallet integration via browser extensions.
+
+---
+
+## Ecosystem Fit
 
 **Where and how does your project fit into the ecosystem?**
-PAPI Copy‑n‑Paste fills a critical gap in the Polkadot developer tooling ecosystem by providing interactive documentation and code generation capabilities that are currently missing.
+Copy-n-Paste PAPI fills a gap in Polkadot developer tooling by providing interactive PAPI discovery, live execution, and exact code generation. It bridges static docs and full dApp frameworks. The new phases extend this bridge to agentic workflows, contract development, and runtime development.
 
 **Who is your target audience?**
-- Parachain developers building on Substrate
-- dApp developers creating Polkadot-based applications  
-- Frontend developers learning PAPI integration
-- Educational institutions teaching blockchain development
-- Hackathon participants needing rapid prototyping tools
 
-**What need(s) does your project meet?**
-- Fragmented PAPI documentation requiring context-switching
-- Lack of interactive learning tools for PAPI
-- Missing code generation for common PAPI patterns
-- Absence of multi-chain contract interaction tools
+* Parachain developers building on Substrate.
+* dApp developers creating Polkadot-based apps.
+* Frontend developers learning PAPI.
+* Educational institutions teaching blockchain development.
+* Hackathon teams needing rapid prototyping.
+* Developers using AI coding tools who need structured, accurate PAPI context.
+
+**What needs does your project meet?**
+
+* Fragmented PAPI docs causing context-switching.
+* Lack of interactive learning and experimentation.
+* Missing code generation for common PAPI patterns.
+* No unified, multi-chain contract interaction tool.
+* Substrate pallet development remains hard even for experienced devs.
+* AI agents struggle due to scattered and non-agent-friendly PAPI knowledge.
 
 **How did you identify these needs?**
-Evidence from Polkadot forum discussions, community feedback on existing tools, and direct developer pain points expressed during PBA Bali and hackathon participation.
 
-**Are there any other projects similar to yours in the Polkadot/Kusama ecosystem?**
-- dev.PAPI.how provides excellent documentation and examples
-- Polkadot.js Apps focuses on governance, not development tools
-- No existing interactive PAPI playground with live blockchain interaction
+* PBA Bali experience building with PAPI.
+* Feedback from classmates and ecosystem devs facing the same pain.
+* Direct conversations with PAPI authors and leaders.
+* Forum response and early preview users.
 
-**How is your project different from dev.PAPI.how?**
-While dev.PAPI.how provides comprehensive documentation and static examples, PAPI Copy-n-Paste offers significant improvements:
-- **Better and Easier Access to Docs**: Streamlined navigation and searchable API reference
-- **Understanding of the API**: Clear visualization of inputs and outputs for each method
-- **Try Before You Code**: Test APIs directly in the browser before implementing
-- **Ready-to-Use Code**: Copy-paste TypeScript snippets that work immediately
-- **CLI Setup**: Complete CLI tool to scaffold repositories with starter code for dApps
+**Similar projects and relationship**
 
-**Are there any projects similar to yours in related ecosystems?**
-The current v1 provides interactive PAPI development capabilities, with v2 planned to add contract interaction features that will transform it into the "Etherscan for Polkadot" - enabling developers to enter any contract address and interact with it across all contract types (ink!, EVM) and major chains.
+* **dev.papi.how (PAPI Console):** Official PAPI team console to browse metadata and run live storage/extrinsic calls on networks, mainly for developers who already know what they're looking for.
+* **papi-simulator / PAPI Interactive Console:** Browser playground to write and execute Polkadot-API code against testnets with examples, focused on code-first experimentation.
+* **polkadot.js Apps:** General Substrate UI for wallets, staking, governance, and extrinsic submission, not a PAPI learning or code-generation tool.
+* **Copy-n-Paste PAPI:** Visual PAPI explorer plus live execution that instantly generates production TypeScript, scaffolds projects, and exports agent-friendly context.
+
+**Difference from dev.papi.how**
+
+* Interactive execution before coding.
+* UI-guided understanding of inputs and outputs.
+* Copy-paste production TypeScript from real executions.
+* Project scaffolding via CLI.
+* Agent-friendly markdown + MCP for LLM workflows.
+
+---
 
 ## Team
 
-> **Note:** As a solo applicant you will still need to complete KYC/KYB, but there is only one beneficiary listed below.
+**Team Name:** illegalcall
+**Contact Name:** Dhruv Sharma
+**Contact Email:** [dhruvcoding67@gmail.com](mailto:dhruvcoding67@gmail.com)
+**Website / GitHub:** [https://github.com/illegalcall](https://github.com/illegalcall)
 
-* **Team Name:** illegalcall
-* **Contact Name:** *Dhruv Sharma*
-* **Contact Email:** *dhruvcoding67@gmail.com*
-* **Website / GitHub:** [https://github.com/illegalcall](https://github.com/illegalcall)
+**Team members:**
+Dhruv Sharma, sole developer for development, design, testing, documentation.
 
-### Team members
+**LinkedIn:**
+[https://www.linkedin.com/in/d3v-dhruv/](https://www.linkedin.com/in/d3v-dhruv/)
 
-* *Dhruv Sharma* – sole developer responsible for development, design, testing and documentation.
+**Repos:**
 
-#### LinkedIn Profiles
+* PAPI Copy-n-Paste: [https://github.com/illegalcall/papi-copy-n-paste](https://github.com/illegalcall/papi-copy-n-paste)
+* create-papi-app: [https://github.com/illegalcall/create-papi-app](https://github.com/illegalcall/create-papi-app)
 
-* https://www.linkedin.com/in/d3v-dhruv/
+**Experience:**
+Built the prototype and CLI using Next.js 15, TypeScript, and PAPI. Attended PBA Bali in 2025, with training in Substrate, Rust, and Polkadot architecture. Collaborated with PAPI authors and validated the tool with community feedback.
 
-### Team Code Repos
-
-* **PAPI Copy‑n‑Paste:** [https://github.com/illegalcall/papi-copy-n-paste](https://github.com/illegalcall/papi-copy-n-paste)
-* **create‑papi‑app:** [https://github.com/illegalcall/create-papi-app](https://github.com/illegalcall/create-papi-app)
-
-### GitHub Accounts
-
-* https://github.com/illegalcall
-
-### Team's experience
-
-I built the initial PAPI Copy‑n‑Paste prototype and `create‑papi‑app` CLI using Next.js 15, TypeScript and PAPI. In 2024 I attended **PBA Bali (Polkadot Blockchain Academy)**, receiving advanced training in Substrate development, Rust programming, and Polkadot ecosystem architecture from experts including Dr. Gavin Wood. I collaborated with PAPI authors, gaining insights into best practices and ecosystem needs. My open‑source contributions and hackathon participation demonstrate Polkadot ecosystem familiarity and community feedback integration.
+---
 
 ## Development Status
 
-The project is already open‑source under the MIT licence with a fully functional web application ([papi-copy-n-paste-web.vercel.app](https://papi-copy-n-paste-web.vercel.app/)) and published CLI ([create‑papi‑app](https://www.npmjs.com/package/create-papi-app)). The current implementation provides comprehensive PAPI development capabilities with live blockchain interaction.
+Open-source under MIT. Fully functional web app and published CLI. Current capabilities:
 
-**Current Platform Capabilities:**
-- **Live Blockchain Interaction**: Connect to multiple RPC endpoints and query real-time data
-- **Real-Time Subscriptions**: Watch blockchain state changes using PAPI observables
-- **Transaction Execution**: Send transactions from connected wallets (Polkadot.js, Talisman, SubWallet)
-- **Multi-Chain Support**: Switch between Polkadot, Kusama, and parachains
-- **Interactive Documentation**: Navigate PAPI docs with live examples
-- **Code Generation**: Generate TypeScript snippets with real parameter values
-- **Project Scaffolding**: CLI tool for bootstrapping PAPI projects
+* Live blockchain interaction with multi-RPC support.
+* Real-time subscriptions via observables.
+* Wallet-based extrinsic execution.
+* Multi-chain switching.
+* Interactive PAPI documentation.
+* TypeScript code generation.
+* Project scaffolding via CLI.
 
-**Technical Implementation:**
-- Monorepo architecture with Next.js, TypeScript, and modern tooling
-- Multi-RPC connection management with failover support
-- Wallet integration for major Polkadot ecosystem wallets
-- Real-time metadata fetching and parameter validation
-- Community validation through active usage and forum feedback [post](https://forum.polkadot.network/t/stop-scrolling-docs-start-building-meet-copy-n-paste-papi/14850)
+This grant focuses on:
 
-The platform delivers significant value as a comprehensive PAPI development environment.
+1. Hardening v1.
+2. Shipping agentic infra.
+3. Delivering in-browser contract IDE + interaction.
+4. Delivering AI papi dapp + substrate pallet builder with spec + TDD loop.
+
+---
 
 ## Development Roadmap
 
-**Duration:** 3 months | **Budget:** $15,000 USD | **Payment:** $5,000 (for v1 already developed), $10,000 upon contract interaction completion
+**Total Duration:** 6 months
+**FTE:** 1 FTE (solo developer)
+**Total Budget:** 30,000 USD
 
-This MVP focuses on core contract interaction capabilities, establishing the foundation for future backend infrastructure.
+### Milestone 1 – V1 Hardening + Agentic Infrastructure (Months 1-2)
 
-### Overview
+**Payment:** 10,000 USD (development + maintenance)
 
-* **Estimated Duration:** 3 months
-* **Full‑Time Equivalent (FTE):** 1 FTE (solo developer)
-* **Total Costs:** 15 000 USD
+**Scope:** Finalize existing tool with production-ready polish and build lightweight MCP-style API server for agentic IDEs (Claude, Cursor, Continue). No self-hosted inference. Local first.
 
+| Number | Deliverable               | Specification                                                                                          |
+| -----: | ------------------------- | ------------------------------------------------------------------------------------------------------ |
+|     0a | License                   | All new code under MIT, dependency compatibility maintained.                                           |
+|     0b | Documentation             | Inline docs, getting-started guide, tutorials for queries, extrinsics, and demo recipes.               |
+|     0c | Testing & guide           | Unit tests, integration tests, E2E flows. pnpm test guide included.                                    |
+|     0d | Docker                    | Dev + prod Dockerfiles for reproducible builds.                                                        |
+|     0e | Article                   | Forum article on goals, architecture, usage, recipes.                                                  |
+|      1 | Searchable docs           | Extract Rust doc comments, link canonical docs, fuzzy ⌘K search.                                       |
+|      2 | Network expansion         | Explicit Asset Hub + People support, chain switcher, README list.                                      |
+|      3 | Wallet UX                 | Wallet picker when multiple extensions. Tests + docs.                                                  |
+|      4 | Markdown exports          | AI-optimised markdown for executed calls + examples for LLM workflows.                                 |
+|      5 | MCP server v1             | Tooling endpoints exposing PAPI metadata, pallets, calls, types, examples. SSE transport where needed. |
+|      6 | Agent workflows           | Example configs + prompts for Claude/Cursor/Continue to query MCP and use markdown exports.            |
+|      7 | AI-optimised doc pipeline | Automated markdown export improvements: better type summarisation, call traces, chain context.         |
+|      8 | Cost + ops plan           | Document operational costs and usage limits (AI API cost model, caching strategy, rate limiting).      |
+|      9 | Maintenance plan          | Clear plan for prompt updates, doc refresh cadence, server ops tasks, and budget.                      |
 
-### Milestone 1 – Finalise Existing Tool (Month 1)
-**Payment:** $5,000 USD
+**Note on maintenance:**
+Milestone 1-2 payments include maintenance allocations for infrastructure operations (API usage, server costs), prompt refinement, version bumps, and ecosystem updates. Local-first architecture minimizes ongoing costs.
 
-|  Number | Deliverable                     | Specification                                                                                                                                                                                                     |
-| ------: | ------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **0a.** | **License**                     | Release all new code under the MIT licence and ensure third‑party dependencies remain compatible.                                                                                                                 |
-| **0b.** | **Documentation**               | Provide comprehensive inline documentation, a getting‑started guide and tutorials covering transactions and storage queries. Publish docs in the repository and webapp.                                           |
-| **0c.** | **Testing & Testing Guide**     | Implement unit tests (utilities, hooks), integration tests (UI interactions) and end‑to‑end tests (common user flows). Include instructions to run tests using pnpm.                                              |
-| **0d.** | **Docker**                      | Supply Dockerfiles for development and production to ensure reproducible builds and deployment.                                                                                                                   |
-| **0e.** | **Article**                     | Publish a technical article on the Polkadot forum explaining the project's goals, architecture and how to use the tool. Invite feedback and contributions.                                                        |
+---
 
-### Milestone 2 – Contract Interaction (Months 2–3)
-**Payment:** $10,000 USD upon completion
+### Milestone 2 – Contract IDE + AI Pallet Builder (Months 3-6)
 
-|      Number | Deliverable                                    | Specification                                                                                                                                                                                                                                                                                                                                                                                |
-| ----------: | ---------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **0a.–0e.** | **Re‑licensing, docs, tests, Docker, article** | Update all mandatory items to reflect the new features and publish a second article describing the contract‑interaction module.                                                                                                                                                                                                                                                              |
-|      **4.** | **Contract Interaction (v2)**                  | Build core contract interaction capabilities: implement contract address validation and detection for ink! and EVM contracts, multi-source metadata fetching (block explorers, registries, IPFS, manual upload), dynamic method interface generation with parameter forms, real-time event monitoring and storage inspection for ink! contracts, and seamless multi-chain support across Moonbeam, Astar, Aleph Zero, and other major parachains. |
-|      **5.** | **Discovery & Release**                 | Implement contract discovery features: popular contracts database, search functionality, recently deployed contracts tracking, and user contract history. Finalise UX with educational content and performance optimizations. Publish v2.0 ready for backend infrastructure expansion.                                                                                                                                                                                                                                                     |
+**Payment:** 20,000 USD (development + maintenance)
 
-### Budget Breakdown
+**Scope:** Build Remix-style in-browser IDE supporting **ink! + Solidity** with interaction capabilities. Develop AI-assisted Substrate pallet builder that generates pallets from structured specs and large test suites using a TDD loop. Local first.
 
-| Category | Item | Cost | Amount | Total | Description |
-| --- | ---- | --- | --- | --- | ---|
-| Personnel | Sole Developer | 15,000 USD | 1 FTE | 15,000 USD | Leading project development, implementing contract interaction features, UI/UX improvements, documentation, testing and maintenance |
-| --- | --- | --- | **Total** | **15,000 USD** | **Payment Schedule:** $5,000 (for v1 already developed), $10,000 upon contract interaction completion |
+| Number | Deliverable                | Specification                                                                                        |
+| -----: | -------------------------- | ---------------------------------------------------------------------------------------------------- |
+|     1a | IDE core                   | Monaco-based editor, file panel, console, templates for ink!/Solidity.                               |
+|     1b | ink! compile pipeline      | Backend compile using deterministic Dockerised toolchain. Return WASM + metadata.                    |
+|     1c | Solidity compile pipeline  | solc backend compile. Return ABI + bytecode.                                                         |
+|     1d | Deploy + interact (local)  | Local sandbox execution for contracts, then UI for deploy/call.                                      |
+|     1e | Contract interaction | ink! contract interaction flow. Solidity contract interaction (metadata and source hashes). |
+|     1f | Chain integration v1       | After local flows stabilize, add deploy/call to 2-3 major contract parachains.                       |
+|     1g | Contract docs + tutorials  | End-to-end guides: write → compile → deploy → interact → call.                                         |
+|     2a | Spec sheet format          | Provide "business use case → spec → testcases" structured template and prompt guidance.              |
+|     2b | Testcase ingestion         | AI generates 50-200 testcases from spec; user reviews/approves. Format as executable Substrate pallet tests. |
+|     2c | TDD generation loop        | AI generates pallet, compiles, runs tests, iterates until all pass or safe stop.                     |
+|     2d | Pallet quality gates       | cargo check/fmt, basic linting, weight scaffolding, event/error correctness checks.                  |
+|     2e | Local runtime sandbox      | Auto-generate node template + integrate pallet locally for user verification.                        |
+|     2f | Pallet docs + examples     | Tutorials with real specs (including privileged call patterns).                                      |
+
+---
+
+## Budget Breakdown
+
+| Category  | Item        | Amount     | Description                                                                              |
+| --------- | ----------- | ---------: | ---------------------------------------------------------------------------------------- |
+| Personnel | Milestone 1 | 10,000 USD | V1 hardening, docs, tests, networks, UX, MCP server, agent workflows + maintenance.      |
+| Personnel | Milestone 2 | 20,000 USD | Contract IDE for ink!/Solidity + interaction, AI pallet builder with spec + TDD + maintenance. |
+
+**Total:** 30,000 USD
+
+---
 
 ## Success Metrics
 
-**Core Contract Interaction Features:**
-- Contract address validation working for ink! and EVM contracts across 3+ chains
-- Metadata fetching from multiple sources (block explorers, registries, IPFS, manual upload) with 80%+ success rate
-- Dynamic method interface generation with working parameter forms
-- Real-time event monitoring and storage inspection for ink! contracts
-- Multi-chain support for Moonbeam (EVM), Astar (dual VM), and Aleph Zero (ink!)
+**Milestone 1 success**
 
-**User Experience & Performance:**
-- Contract load time under 5 seconds end-to-end
-- 90%+ transaction success rate for contract method execution
-- Interactive contract method forms with parameter validation and type checking
-- Real-time transaction status updates and result display
-- Comprehensive error handling and user feedback
-- Educational tutorials and documentation for contract interaction
+* Searchable explorer with doc comments and typo-tolerant search.
+* Asset Hub + People supported.
+* Wallet picker fixed.
+* AI Markdown export.
+* MCP server queried successfully from Claude/Cursor.
 
-**Technical Foundation:**
-- Modular architecture ready for backend infrastructure expansion
-- Contract discovery system with popular contracts database
-- Search functionality for contract discovery
-- User contract history and favorites system
-- Performance optimizations for large contract interactions
+**Milestone 2 success**
 
-**Ecosystem Validation:**
-- 30+ developers actively using contract interaction features within 3 months
-- Positive feedback from PAPI team and ecosystem developers
-- Integration with at least 2 major parachain developer programs
-- Community contributions to contract templates and examples
-- Successful contract interactions across different contract types (ink!, EVM)
+* ink! and Solidity contracts editable, compile and run end-to-end in browser.
+* ink! contract interaction succeeds for common contracts.
+* Local flows solid before chain integration.
+* 2-3 parachain deploy targets supported after local validation.
+* Pallets generated from spec + testcase suites with passing rates in sandbox.
+* Compile + test iteration loop stable and predictable.
+* Clear guidance on when pallet vs contract is appropriate.
 
-## Future Plans
+---
 
-After delivering v2.0 MVP, I will maintain the tool and incorporate new PAPI features. The next phase focuses on backend infrastructure for advanced features like comprehensive contract discovery, analytics, and user management. I plan to seek further funding, promote at hackathons, and collaborate with parachain teams. User feedback will guide priorities like mobile support and enterprise features.
+## Future Plans (Unfunded Roadmap)
 
-## Additional Information
+**JAM / Polkadot 3.0 integration**
+Once JAM tooling and developer standards stabilise, adapt:
 
-The prototype and CLI are publicly available under MIT licence with community feedback via the forum. My PBA Bali participation and direct mentorship from PAPI creators provide unique insights into the library's usage patterns and developer experience goals, ensuring PAPI Copy‑n‑Paste aligns with best practices. This is my first grant request; no prior funding received. Contributions welcome via GitHub.
+* PAPI discovery and generation to JAM APIs and service model.
+* Contract IDE deploy/interact to JAM-compatible runtimes.
+* Pallet builder to JAM patterns if runtime development model changes.
+
+This is not funded in this grant, but will be a priority maintenance and follow-on scope.
+
