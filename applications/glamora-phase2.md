@@ -1,256 +1,300 @@
-# Glamora Phase 2: AI-Powered Marketplace & Mainnet Deployment
+# Glamora Phase 2: AI-Powered Fashion Marketplace
 
-## Overview
+## Project Overview
 
-**What:** Scale Glamora from testnet prototype to production marketplace with AI intelligence and multi-currency support, starting with underserved emerging markets then expanding globally.
+**Tagline:** AI-powered marketplace where fashion creators keep 95% of earnings and own their content forever while platform keeps 5%.
 
-**Why Now:** Phase 1 (Fast-Grants, submitted November 2025) delivers creator tools for Nigerian market. Phase 2 amplifies those tools with features that help creators earn 2-3x more, then scales to underserved markets globally (Africa, Southeast Asia, Latin America, South Asia).
+**Brief Description:**
 
-**Track Record:** Solo developer from Lagos, Nigeria who built Glamora v1 in 6 weeks, deployed on Moonbase Alpha testnet, and submitted to Polkadot Hackathon 2025. Proven ability to ship working products rapidly while understanding emerging market creator challenges firsthand.
+Glamora is a decentralized marketplace for fashion creators. Phase 1 (already deployed on Moonbase Alpha testnet) gives creators a platform to upload designs and earn directly from buyers—no middleman, no algorithm gatekeeping.
 
-**Strategic Approach:** Phase 2 explicitly depends on Phase 1 completion. We will not start Phase 2 development until Phase 1 milestones are delivered and verified (expected: March 2026). Sequential execution: prove in Nigeria → scale across emerging markets → eventually global platform.
+Phase 2 scales this with three critical upgrades:
+1. **AI recommendations** so buyers find amazing content (3-5x more sales per creator)
+2. **Multi-currency support** (DOT, GLMR, USDC) so mainstream users can participate without needing crypto
+3. **Mainnet deployment** so it's production-ready with professional security
 
----
+**Relationship to Polkadot:**
 
-## The Dependency Model
+Built on Moonbeam (Polkadot parachain). Uses EVM-compatible Solidity smart contracts. Leverages Polkadot's low-cost infrastructure to serve emerging market creators globally. Phase 2 demonstrates Moonbeam's capability for real-world dApps.
 
-**Phase 1 (Fast-Grants) - Weeks 1-12:**
-Creator analytics, bulk upload, search, profiles, following, notifications, mobile optimization.
-**Result:** Creators have a working platform to sell content.
+**Why This Matters:**
 
-**Phase 2 (Open Source) - Weeks 13-28:**
-AI recommendations, multi-currency payments, escrow, creator collaborations, mainnet deployment, governance.
-**Result:** Phase 1 creators earn 2-3x more. Platform is production-ready and self-sustainable.
+I'm a fashion designer. I had Instagram and Facebook accounts with significant following. Both unfortunately it got banned on the same day, all content, followers, engagement—gone. No clear reason and no appeal that worked. I had to create another and I exprienced the same thing that was when I knew I had to do something.
 
-**Why Sequential:**
-- AI recommendations require Phase 1 purchase history data
-- Multi-currency improves Phase 1 transaction experience  
-- Mainnet scales Phase 1's real users
-- Totally different features = no overlap, justified separate grants
+Then another thing is, I tried monetizing my content but geographic restrictions blocked it. I'm in Nigeria and it's unfortunate that most platforms don't pay creators in Africa.
 
-**Why This Strategy:**
-- Proves Phase 1 execution before funding Phase 2
-- Solo developer + $50K in parallel = failure risk
-- Sequential delivery = demonstrable progress
-- Higher approval chance for both grants
+I spoke to other creators and it's the same story: "Monetization here is nearly impossible unless you have a foreign account."
+
+That's the problem Glamora solves. A platform where:
+- Creators can't be randomly banned
+- Creators own their content which is stored on IPFS, not a platform server
+- Creators get 95% while platform keep 5% of earnings no 30-50% cuts like Instagram/TikTok
+- It works globally, especially for emerging markets
 
 ---
 
-## The Problem & Solution
+## Project Details
 
-**Problem:** 
-Fashion creators on Web2 platforms lose 30-50% of earnings to platform fees. They have no ownership of content or audience. Emerging market creators are hit hardest.
+**Technology Stack:**
 
-**Phase 1 Solution:** 
-Direct creator-to-buyer marketplace. Creators keep 100%, own their content on IPFS, control pricing.
+- **Smart Contracts:** Solidity 0.8.20, OpenZeppelin libraries
+- **Blockchain:** Moonbeam (Polkadot parachain), EVM-compatible
+- **Frontend:** React 18, TypeScript, Vite
+- **Web3:** ethers.js v5, MetaMask
+- **Storage:** IPFS via Pinata
+- **AI:** OpenAI/Anthropic APIs for recommendations and search
+- **Infrastructure:** CloudFlare CDN, Redis, PostgreSQL
 
-**Phase 2 Problem:** 
-Phase 1 creators still face discovery challenge. Users don't know which content to buy. Without recommendations, sales plateau.
+**Core Architecture:**
 
-**Phase 2 Solution:**
-- AI recommendations surface best content → creators earn 2-3x more
-- Multi-currency (DOT, GLMR, USDC) → mainstream users no longer need GLMR
-- Mainnet deployment → real production environment, professional security
-- Sustainability mechanisms → platform doesn't depend on continuous grants
+Phase 1 established three core smart contracts:
+- **GlamoraHub.sol** - Creator registry, contract coordination
+- **CreatorProfile.sol** - Creator data storage
+- **ContentPayment.sol** - Purchase logic, direct payments
 
----
+Phase 2 adds:
+- **MultiTokenPayment.sol** - Handle DOT/GLMR/USDC routing
+- **EscrowSystem.sol** - Dispute resolution
+- **CreatorCollab.sol** - Revenue splits for collaborations
+- **NFT Minting** - Creators can mint their designs as NFTs for proof of ownership and collectibility
+- **Affiliate.sol** - Referral rewards
+- **GovernanceToken.sol** - GLAM token for community decisions
 
-## Phase 2 Deliverables
+**Current Status (Phase 1 - Already Deployed):**
 
-### Milestone 1: AI Intelligence Layer ($10K, 6 weeks)
-
-**1. AI Recommendations Engine**
-Personalized recommendations using user purchase history and content similarity. Creator A's products recommended to users who buy from similar creators. Real-time updates after each purchase. Increases content discovery by 5x.
-
-**2. Natural Language Search**
-Advanced queries: "red dresses for weddings under $50" understood and executed. Powered by semantic search with vector embeddings. Returns ranked results. Faster and more intuitive than keyword search.
-
-**3. Smart Pricing Algorithm**
-AI analyzes similar content prices + market trends + creator reputation. Suggests optimal price range for new content. Shows potential earnings at different price points. Helps creators price competitively.
-
-**4. Auto-Tagging System**
-AI analyzes images and written descriptions to automatically categorize content. Generates: primary category, style descriptors, target audience. Creators can override suggestions. Improves search accuracy by 5x.
-
-**Deliverables:** Functional AI system on testnet, unit tests, integration tests, Medium article explaining implementation.
-
----
-
-### Milestone 2: Multi-Currency & Advanced Marketplace ($10K, 5 weeks)
-
-**1. Multi-Token Payments**
-Accept DOT (Polkadot), GLMR (Moonbeam), USDC (stablecoin) via AssetHub. Automatic exchange rate conversion. Creator chooses preferred payout currency. Reduces friction for non-GLMR users by 80%.
-
-**2. Escrow Smart Contract**
-Trustless dispute resolution. Funds locked on purchase. Buyer has 7 days to dispute. Dispute filing interface. Admin resolution in Phase 2, community arbitration in Phase 3.
-
-**3. Creator Collaborations**
-Multiple creators collaborate with automated revenue splits. On-chain immutable agreements. Automatic distribution on each sale. Use cases: photographer + stylist, designer + model.
-
-**4. Affiliate Program**
-Users earn 5% commission by referring others. Unique referral links. Track conversions on-chain. Monthly payouts. Anti-fraud measures built-in.
-
-**Deliverables:** Functional multi-currency system, 3 new smart contracts, comprehensive tests, documentation.
+✅ 3 smart contracts deployed and verified on Moonbase Alpha  
+✅ React frontend with MetaMask integration  
+✅ IPFS storage working via Pinata  
+✅ Basic upload → purchase flow functional  
+✅ Live demo: https://youtu.be/wABK8NNpyUQ  
+✅ GitHub: https://github.com/Terese678/glamora-polkadot  
 
 ---
 
-### Milestone 3: Mainnet Deployment & Sustainability ($10K, 5 weeks)
+## Ecosystem Fit
 
-**1. Professional Security Audit**
-Third-party audit (Hacken/CertiK/OpenZeppelin). All contracts reviewed. Vulnerabilities fixed. Report published.
+**Position in Polkadot:**
 
-**2. Moonbeam Mainnet Deployment**
-All Phase 1 + Phase 2 contracts deployed. Verified on Moonscan. Monitoring and alerting setup. Backup systems. Disaster recovery plan.
+Glamora demonstrates Polkadot's strength in serving real-world use cases for underserved markets. Most Web3 projects target crypto enthusiasts. Glamora targets fashion creators globally who just want fair earnings.
 
-**3. Governance Token (GLAM)**
-ERC-20 token for community decisions. Initial distribution: 40% community rewards, 30% team (4-year vest), 20% ecosystem, 10% early creators. Voting on platform fee, new features, grant allocations.
+**Target Audience:**
 
-**4. Developer API**
-RESTful API for third-party integrations. Search, profiles, purchase history, webhooks, analytics. Enables mobile apps, price aggregators, browser extensions.
+- Fashion designers, photographers, videographers
+- Tutorial creators (styling, makeup, design)
+- Fashion enthusiasts monetizing content
+- Primarily: emerging market creators (Africa, Asia, Latin America)
+- Eventually: global creators seeking fairer platforms
 
-**5. Performance Optimization**
-CloudFlare CDN, Redis caching, PostgreSQL indexing. Target: <2s page load, <500ms search, 99.9% uptime, 1000+ concurrent users.
+**Problems Solved:**
 
-**Deliverables:** Audited mainnet contracts, governance token deployed, public API with documentation, performance metrics.
+1. **Platform Exploitation:** Creators lose 30-50% to platforms. Glamora - 5% platform fee, creators keep 95%.
 
----
+2. **Random Account Bans:** I lost my Instagram account overnight, all my content and followers disappeared. But, Glamora, IPFS storage means creators own content permanently.
 
-## Budget ($30,000)
+3. **Geographic Barriers:** Can't monetize from Africa but Glamora works globally.
 
-| Item | Cost | Notes |
-|------|------|-------|
-| Smart contract dev (120 hrs) | $3,000 | Multi-token, escrow, collab, affiliate, governance |
-| AI integration (140 hrs) | $3,500 | OpenAI API, recommendations, search, pricing, tagging |
-| Frontend dev (180 hrs) | $4,500 | React components for new features |
-| Testing & debugging (100 hrs) | $2,500 | Unit, integration, E2E tests |
-| Documentation & articles (60 hrs) | $1,500 | Code docs, user guides, Medium articles |
-| AI API subscription | $4,000 | 6 months OpenAI/Anthropic |
-| Security audit | $5,000 | Professional third-party audit |
-| Infrastructure & hosting | $5,000 | 6 months: Redis, PostgreSQL, CDN, monitoring |
-| Mainnet deployment costs | $1,000 | Gas fees + setup |
-| **Total** | **$30,000** | 16 weeks, 600 hours |
+4. **Discovery:** Even great content gets buried by algorithms. Glamora - AI finds best creators for buyers.
 
-**Rate:** $25/hour reflects emerging market blockchain development, below US/EU rates ($75-150/hour).
+5. **Currency Barriers:** Non-crypto users can't participate. Glamora - Accept USDC stable coin or any supported token.
 
----
+**Similar Projects:**
 
-## Timeline & Execution
+Mirror Protocol, Rally, Lens Protocol exist but target different use cases:
+- Mirror: Long-form writing
+- Rally: Music/artists limited fashion focus
+- Lens: Social protocol not marketplace
 
-**Start:** After Phase 1 completes (estimated April 2026)
-**Duration:** 16 weeks (4 months)
-**Commitment:** 20 hours/week (0.5 FTE)
+None specifically serve fashion creators with:
+- Fashion-focused UI/UX
+- Emerging market pricing - low gas costs critical
+- Direct earnings model 
 
-**Week 1-6:** Milestone 1 (AI features)
-**Week 7-11:** Milestone 2 (Multi-currency + marketplace)
-**Week 12-16:** Milestone 3 (Audit + mainnet + governance)
+Glamora fills this gap.
 
-**Weekly deliverables via GitHub commits.** Respond to curator feedback within 48 hours.
+**Why This Needed:**
+
+Fashion is a $1.5 trillion industry and come to think of it creators have almost zero Web3 options for utility content (tutorials, designs).
 
 ---
 
 ## Team
 
-**Developer:** Timothy Terese Chimbiv  
-**Location:** Lagos, Nigeria  
-**Background:** 5+ years fashion industry, Dredge Classics founder, self-taught blockchain developer  
-**Track Record:** Built Glamora v1 in 6 weeks, deployed on Moonbase Alpha, submitted to Polkadot Hackathon  
-**GitHub:** https://github.com/Terese678  
-**Email:** dredgeclassics@gmail.com  
-**Communication:** Daily active on GitHub, respond within 24 hours  
+**Team Name:** Glamora / Dredge Classics
+
+**Contact Name:** Timothy Terese Chimbiv
+
+**Contact Email:** dredgeclassics@gmail.com
+
+**Website:** https://github.com/Terese678/glamora-polkadot
+
+**Team Members:**
+
+Timothy Terese Chimbiv I am a Solo Developer
+
+**GitHub:** https://github.com/Terese678
+
+**Team Experience:**
+
+- Built Glamora v1 in 6 weeks (October-November 2025)
+- 3 production smart contracts deployed on Moonbase Alpha
+- Complete React frontend with MetaMask integration
+- I also submitted to Polkadot Hackathon 2025
+- I have 0ver 5 years fashion industry experience I'm the founder of Dredge Classics in Lagos, Nigeria
+- I'm a self-taught blockchain developer—proven ability to learn fast and ship working products
+
+**Track Record:**
+
+- Glamora v1 deployed and verified on Moonbase Alpha
+- Real creators using platform on testnet
+- All code documented and open-source
+- Fast execution (6 weeks from idea to deployment)
+- I absolutely understand emerging market creator challenges firsthand since I'm in the field
 
 ---
 
-## Commitment to Delivery
+## Development Status
 
-✅ Deliver all three milestones within 16 weeks  
-✅ Weekly progress updates via GitHub  
-✅ Respond to curator feedback within 48 hours  
-✅ Comprehensive testing and documentation  
-✅ Publish security audit results transparently  
-✅ Will not start Phase 2 development until Phase 1 is proven complete  
+**Current Status:** Phase 1 is deployed and working on testnet while phase 2 is planned upgrade.
+
+**Deployed Contracts:**
+
+- GlamoraHub: 0x4fe1D1b42E734c52365C0DdF2C94bf34f6e07115
+- CreatorProfile: 0x17D58639c871D848e31597372056CBb548F3fE93
+- ContentPayment: 0x86eC3e58B69e9975d572d099814c2F470E18b2e6
+
+**Repository:** https://github.com/Terese678/glamora-polkadot
+
+**Research Completed:**
+
+- AI recommendation algorithms (tested on sample creator data)
+- Multi-chain payment routing (studied AssetHub integration)
+- Smart contract security best practices
+- Emerging market use cases and barriers
 
 ---
 
-## What Happens After
+## Development Roadmap
 
-## Building for Creators Globally
+**Overview:**
 
-Glamora is built by an African founder from Lagos, Nigeria who understands creator exploitation firsthand. This isn't a Western platform exported globally—it's infrastructure built WITH emerging market creators FOR all creators worldwide.
+Estimated Duration: 12 weeks (3 months)  
+Full-Time Equivalent (FTE): 0.5 FTE (20 hours/week)  
+Total Costs: $30,000 USD
 
-**Current Reality:** Web2 platforms (Instagram, TikTok, Patreon) take 30-50% of creator earnings globally. The problem is worst in emerging markets where creators have fewer options and higher barriers.
+---
 
-**Glamora's Mission:** Give creators worldwide tools to earn 100% of their content value.
+## Milestone 1: AI Discovery + Multi-Currency Integration
 
-**Launch Strategy:**
+**Duration:** 6 weeks  
+**Cost:** $15,000 USD
 
-**Phase 1 (Months 1-3):** Nigeria focus—prove concept in home market with 100+ creators earning real money.
+| Number | Deliverable | Specification |
+|--------|-------------|---------------|
+| 0a. | License | MIT License |
+| 0b. | Documentation | (1) Inline code documentation for all new smart contracts and AI integration. (2) User guide: "How AI Recommendations Work." (3) Developer guide: "Multi-Currency Payment Integration." (4) Setup instructions for running locally with test data. (5) Troubleshooting guide. |
+| 0c. | Testing and Testing Guide | Unit tests for AI recommendation engine (accuracy metrics). Integration tests for multi-token payment routing. End-to-end tests for search queries. Performance tests (response time <500ms target). Testing guide includes: how to run tests, mock AI responses for testing, expected outcomes. |
+| 0d. | Docker | Dockerfile for complete Phase 2 environment. Includes: Node.js + Hardhat for contracts, React dev server, mock AI endpoints, testnet connection. `docker run glamora:phase2` spins up full local environment. |
+| 0e. | Article | Medium article: "Building AI-Powered Creator Marketplaces on Polkadot." Covers: technical architecture, challenges solved, performance metrics, why this matters for emerging markets. |
+| 1. | AI Recommendation Engine | Personalized content recommendations. Algorithm analyzes: purchase history, creator similarity, trending content. Real-time updates after each purchase. Increases discovery by 3-5x. Fully functional on testnet. |
+| 2. | Natural Language Search | Advanced search understanding plain English. "Red dresses for weddings under $50" → correctly returns filtered results. Uses semantic search with embeddings. Faster and more intuitive than keyword search. Fully tested. |
+| 3. | Smart Pricing Algorithm | AI suggests optimal price range for new content based on: similar creator prices, market trends, creator reputation. Shows creator potential earnings at different prices. Helps creators price competitively. |
+| 4. | Auto-Tagging System | AI analyzes images + descriptions. Auto-generates: primary category, style descriptors, target audience. Creators can override. Improves search accuracy and discoverability. |
+| 5. | Multi-Token Payment System | Accept DOT (Polkadot), GLMR (Moonbeam), USDC (stablecoin). Automatic exchange rate conversion using Chainlink oracles. Buyer pays in any token. Creator chooses payout currency. Tested on testnet. Reduces friction for non-GLMR users by 80%. |
+| 6. | Affiliate Program | Users earn 5% commission referring others. Unique referral links. On-chain conversion tracking. Monthly payout system. Anti-fraud measures (no self-referrals). Fully functional. |
 
-**Phase 2 (Months 4-7):** Emerging markets expansion—launch in:
-- East Africa: Kenya (50M+ population, fashion hub)
-- West Africa: Ghana (30M+, creative hub)
-- Southern Africa: South Africa (60M+, largest African economy)
-- South Asia: India (1.4B population, massive creator economy)
-- Southeast Asia: Philippines, Indonesia, Thailand (emerging fashion/content scenes)
-- Latin America: Brazil, Mexico (large Spanish/Portuguese speaking creative communities)
+---
 
-**Why Start with Emerging Markets:**
-- Underserved by Web2 (no creator funds, limited monetization options)
-- Creator exploitation is most severe (50%+ platform cuts)
-- Fastest crypto adoption rates (opportunity to leapfrog Web2)
-- Highest ROI impact per dollar (creator earnings matter most where incomes are lower)
+## Milestone 2: Mainnet Deployment + Governance
 
-**Then Global Expansion:**
-- Once proven in emerging markets, expand to developed markets
-- US/EU creators choosing Glamora over Instagram/TikTok because of 0-2% fees
-- Global network effect: creators in Nigeria can collaborate with creators in Brazil
+**Duration:** 6 weeks  
+**Cost:** $15,000 USD
 
-**Target Market:** 1 billion+ creators globally currently exploited by centralized platforms. Glamora's addressable market in emerging markets alone: 500M+ creators.
+| Number | Deliverable | Specification |
+|--------|-------------|---------------|
+| 0a. | License | MIT License |
+| 0b. | Documentation | (1) Security audit report with all findings and resolutions. (2) Mainnet deployment runbook with step-by-step instructions. (3) Governance token mechanics and voting guide. (4) Public API documentation with examples (Python, JavaScript, React). (5) Monitoring and alerting setup guide. (6) Disaster recovery procedures. |
+| 0c. | Testing and Testing Guide | Security vulnerability testing (reentrancy, overflow, access control). Mainnet deployment dry-runs. Governance token functionality tests. API endpoint testing. Load testing for 1000+ concurrent users. Monitoring verification. Testing guide includes test execution steps and success criteria. |
+| 0d. | Docker | Dockerfile for running audited mainnet contracts locally. Includes: deployed contract ABIs, event listeners, transaction simulation. For testing and verification. |
+| 0e. | Article | Medium article: "From Testnet to Mainnet: Deploying Creator Platforms on Polkadot." Covers: audit findings and fixes, security best practices, governance implementation, performance metrics. Case study: Glamora deployment. |
+| 1. | Professional Security Audit | Third-party audit (Hacken, CertiK, or OpenZeppelin equivalent). Complete review of all smart contracts. All critical and high-severity vulnerabilities fixed. Medium/low findings documented or addressed. Full audit report published. |
+| 2. | Moonbeam Mainnet Deployment | All Phase 1 + Phase 2 contracts deployed to Moonbeam mainnet. Verified on Moonscan. Monitoring and alerting infrastructure setup. Backup systems. Disaster recovery tested. Rollback procedures documented. |
+| 3. | Governance Token (GLAM) | ERC-20 token deployed. Initial distribution: 40% community rewards, 30% team (4-year vest), 20% ecosystem fund, 10% early creators. Voting mechanism for: platform fees, new features, partnerships, treasury allocation. Community can propose and vote on changes. |
+| 4. | Public Developer API | RESTful API for third-party integrations. Endpoints: search content, get creator profiles, fetch purchase history, webhooks for events, analytics data access. Rate limiting and API key auth. Full documentation with SDK packages (JavaScript, Python, React). Enables: mobile apps, price aggregators, analytics tools. |
+| 5. | Performance Optimization | CloudFlare CDN for global content delivery. Redis caching for frequent queries. PostgreSQL indexing optimization. Image optimization and lazy loading. Code splitting and bundle optimization. Target metrics: <2s page load, <500ms search, 99.9% uptime, 1000+ concurrent users. All targets verified. |
+| 6. | Escrow Smart Contract | Trustless dispute resolution. Funds locked on purchase. Buyer has 7 days to dispute. Dispute filing interface. Admin resolution in Phase 2. Community arbitration ready for Phase 3. Tested extensively. |
 
-**Sustainability Model:**
-- Creators keep 98%+ of sales (vs 30-50% on Web2)
-- Optional 2% platform fee covers infrastructure, development, community grants
-- Break-even at 200 active creators, $50K monthly GMV
-- At scale: $100K+ monthly revenue = sustainable without grant dependency
+---
 
-**6-Month Goals:**
-- 100+ active creators (Nigeria)
-- 1,000+ engaged users (Africa + Asia + Latin America)
-- $10K+ monthly GMV
-- Production environment stable on Moonbeam mainnet
-- Launch communities in Kenya, Ghana, India, Philippines
+## Budget Breakdown
 
-**12-Month Goals:**
-- 500+ active creators across emerging markets
-- 10,000+ engaged users globally
-- $100K+ monthly GMV
-- Operational presence in 3-4 countries
-- Advanced features (live streaming, video content, creator DAOs)
+| Category | Item | Amount | FTE | Total | Description |
+|----------|------|--------|-----|-------|-------------|
+| Personnel | Smart Contract Developer | $25/hr | 0.25 | $7,500 | MultiToken, Escrow, Collab, Affiliate, Governance contracts |
+| Personnel | Full-Stack Developer | $25/hr | 0.25 | $7,500 | React components, API integration, DevOps |
+| Subcontracts | AI API Subscription | - | - | $4,000 | 6 months OpenAI/Anthropic |
+| Subcontracts | Security Audit | - | - | $5,000 | Professional third-party audit |
+| Subcontracts | Infrastructure | - | - | $5,000 | 6 months: Redis, PostgreSQL, CDN, monitoring, hosting |
+| Subcontracts | Mainnet Deployment | - | - | $1,000 | Gas fees, contract verification, setup |
+| **TOTAL** | | | **0.5 FTE** | **$30,000** | 12 weeks, 600 hours |
 
-**Long-Term Vision (24+ Months):**
-- Millions of creators on Glamora across all regions
+**Rate Justification:** $25/hour is standard for emerging market blockchain development. Significantly below US/EU rates ($75-150/hour) while accounting for complex Web3 + AI integration.
+
+---
+
+## Future Plans
+
+**6 Months Post-Deployment:**
+- 100+ active creators on mainnet
+- 1,000+ engaged users
+- $10K+ monthly trading volume
+- Mainnet running smoothly
+
+**12 Months:**
+- Expand to emerging markets: Kenya, Ghana, South Africa, India
+- 500+ active creators
+- $100K+ monthly volume
+- Community governance voting on features
+
+**Long-Term:**
+- Millions of creators globally
 - $1M+ monthly revenue
-- Sustainable, profitable company creating jobs globally
-- Cross-parachain integration via XCM enabling global liquidity
-- Open-source SDK enabling similar platforms in other industries
-- Proof that Web3 technology serves real people in real economies
+- Sustainable (optional 2% platform fee covers operating costs)
+- Cross-parachain integration via XCM
+- Open-source SDK for building similar platforms
 
-**Why Polkadot Benefits:**
-- Demonstrates Moonbeam's capability to power global creator economy
-- Shows Polkadot reaching beyond crypto enthusiasts to mainstream users
-- Proves real-world impact in emerging markets (Polkadot's strategic goal)
-- Sets template for other builders wanting to serve underserved populations globally
-
----
-
-## Why Phase 2 Matters for Polkadot
-
-Glamora Phase 2 demonstrates three key Polkadot strengths:
-
-1. **Multi-Chain Capability:** AssetHub integration shows practical use of Polkadot's interoperability
-2. **Real-World Impact:** Creator economy application solving tangible problems for underserved markets
-3. **Production Readiness:** From testnet prototype to audited mainnet in one grant cycle
-
-Success means: More developers building real applications. More emerging market users on Polkadot. Proof that Web3 can serve non-crypto-native users.
+**Sustainability:**
+- Optional 2% platform fee (vs 30-50% on Web2)
+- GLAM token governance reduces dependency on grants
+- Public API enables ecosystem monetization
+- At 200 active creators: $50K monthly GMV = break-even
 
 ---
 
-Thank you for considering Glamora Phase 2. We're building not just a platform, but a model for how Polkadot technology can empower creators globally.
+## Additional Information
+
+**Work Already Completed:**
+
+- Glamora v1 fully functional on Moonbase Alpha
+- 3 production smart contracts deployed and verified
+- Complete React/TypeScript frontend
+- IPFS integration working
+- MetaMask integration complete
+- Submitted to Polkadot Hackathon 2025
+- Comprehensive GitHub documentation
+
+**Other Funding:**
+
+Glamora Phase 1 had no funding, but I'm hoping with open source grant I'll be able to reach desire goal in phase 2
+
+**Commitment to Delivery:**
+
+✅ Deliver both milestones within 12 weeks  
+✅ Weekly GitHub commits showing progress  
+✅ Respond to curator feedback within 48 hours  
+✅ Comprehensive testing and documentation for all deliverables  
+✅ Publish security audit results transparently  
+✅ Maintain open communication throughout development
+
+---
+
+Thank you for considering Glamora Phase 2. We're building infrastructure for creators who've been left behind by Web2 platforms.
