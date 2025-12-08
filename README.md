@@ -1,4 +1,8 @@
+> [!CAUTION]
+> **Applications are currently paused. Please do not submit any new grant applications!**
+
 # Polkadot Open Source Grants Bounty<!-- omit in toc -->
+
 
 - [Introduction](#introduction)
   - [Guidelines](#guidelines)
