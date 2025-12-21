@@ -70,20 +70,20 @@ There are a numerous number of libraries available for Polkadot but we are the o
 
 ## Team :busts_in_silhouette:
 
-- Team Name: Snowpine Labs Inovacao em Tecnologia Ltda
-- Contact Name: Leonardo Custodio
-- Contact Email: leonardo@custodio.me
+- Team Name: Polkadart Team
+- Contact Name: Kawal Singh
+- Contact Email: kawal741536@gmail.com
 - Website: https://polkadart.dev
 
 ### Team members
 
+- Kawal Singh (Mobile Software Engineer)
 - Leonardo Custodio (Blockchain Engineer)
-- Kawal Singh (Software Engineer)
 
 #### LinkedIn Profiles
 
-- https://www.linkedin.com/in/leogcustodio/
 - https://www.linkedin.com/in/singhkawal/
+- https://www.linkedin.com/in/leogcustodio/
 
 ### Team Code Repos
 
@@ -93,14 +93,13 @@ There are a numerous number of libraries available for Polkadot but we are the o
 
 ### Team's experience
 
-Leonardo Custodio
-
-Leonardo is a Blockchain Engineer with a robust software development background. He has over four years of dedicated experience in Polkadot-related technologies and six years of experience as a Flutter developer and over 10 years of experience in software development. Currently, he is working on PolkaIdentity and creating innovative SDKs tailored for game developers that enables seamless interactions with polkadot based systems.
-
 Kawaljeet Singh
 
 Kawal has extensive hands-on experience in Flutter and has good understanding of Polkadot's stack and protocols. With numerous apps published on iOS and android in Flutter ranging from data-management to live appointment systems and drag-and-drop desktop designing tool, he brings good knowledge and vast skill-sets to the team. In his free time he is focused on developing Flutter tools and libraries like excel useful to ease developers work. On week-ends, he publishes complex UIs made in Flutter to showcase Flutter's use-cases.
 
+Leonardo Custodio
+
+Leonardo is a Blockchain Engineer with a robust software development background. He has over four years of dedicated experience in Polkadot-related technologies and six years of experience as a Flutter developer and over 10 years of experience in software development. Currently, he is working on PolkaIdentity and creating innovative SDKs tailored for game developers that enables seamless interactions with polkadot based systems.
 
 ## Development Status :open_book:
 
@@ -117,7 +116,27 @@ Our documentation is available at https://polkadart.dev at keeps being improved 
 - **Full-Time Equivalent (FTE):**  1 FTE
 - **Total Costs:** 30,000 USD
 
-### Milestone 1: Metadata V16 & Transaction Format V5
+
+### Milestone 1: Support for new typed metadata across all packages
+
+- **Estimated duration:** 1 month
+- **FTE:**  1
+- **Costs:** 10,000 USD
+
+| Number | Deliverable | Specification |
+| -----: | ----------- | ------------- |
+| **0a.** | License | Apache 2.0 |
+| **0b.** | Documentation | Our code is documented and we will also provide documentation for all deliverables use-cases at https://polkadart.dev |
+| **0c.** | Testing | Unit tests will be created for all main functionalities, they can be easily run by running the docker image bellow |
+| **0d.** | Docker | A Dockerfile is provided to run all unit tests without the need of installing any dependencies |
+| **0e.** | Article | We will create an article that will be posted at Medium and Polkadot Forum to explain the new features |
+| **1.** | Substrate metadata | Use typed metadata as default |
+| **2.** | Registry | Adjust registry to work with typed metadata |
+| **3.** | Polkadart CLI | Adjust CLI to work with typed metadata |
+| **4.** | Polkadart | Adjust Polkadart to work with typed metadata |
+
+
+### Milestone 2: Metadata V16 & Transaction Format V5
 
 - **Estimated duration:** 2 months
 - **FTE:**  1
@@ -134,29 +153,12 @@ Our documentation is available at https://polkadart.dev at keeps being improved 
 | **2.** | Transaction Format V5 | Use the new transaction format v5 to generate extrinsics and keep v4 as fallback  |
 | **3.** | New JSON API interfaces | Create new interfaces for the JSON API |
 
-### Milestone 2: Support for new typed metadata across all packages
-
-- **Estimated duration:** 1 month
-- **FTE:**  1
-- **Costs:** 5,000 USD
-
-| Number | Deliverable | Specification |
-| -----: | ----------- | ------------- |
-| **0a.** | License | Apache 2.0 |
-| **0b.** | Documentation | Our code is documented and we will also provide documentation for all deliverables use-cases at https://polkadart.dev |
-| **0c.** | Testing | Unit tests will be created for all main functionalities, they can be easily run by running the docker image bellow |
-| **0d.** | Docker | A Dockerfile is provided to run all unit tests without the need of installing any dependencies |
-| **0e.** | Article | We will create an article that will be posted at Medium and Polkadot Forum to explain the new features |
-| **1.** | Substrate metadata | Use typed metadata as default |
-| **2.** | Registry | Adjust registry to work with typed metadata |
-| **3.** | Polkadart CLI | Adjust CLI to work with typed metadata |
-| **4.** | Polkadart | Adjust Polkadart to work with typed metadata |
 
 ### Milestone 3: New Features & Integrations
 
 - **Estimated duration:** 3 months
 - **FTE:**  1
-- **Costs:** 15,000 USD
+- **Costs:** 10,000 USD
 
 | Number | Deliverable | Specification |
 | -----: | ----------- | ------------- |
@@ -175,8 +177,8 @@ Our documentation is available at https://polkadart.dev at keeps being improved 
 
 | Category | Item | Cost | Amount | Total | Description |
 | --- | ---- | --- | --- | --- | ---|
-| Personnel | Blockchain Engineer & Team Lead | 5,000 USD | 3 FTE | 15,000 USD | lead & developer |
-| Personnel | Mobile Software Engineer | 5,000 USD | 3 FTE | 15,000 USD | developer |
+| Personnel | Mobile Software Engineer & Team Lead | 9,999 USD | 2.9997 FTE | 29,997 USD | lead & developer |
+| Personnel | Blockchain Engineer | 1 USD | 0.0003 FTE | 3 USD | developer |
 | --- | --- | --- | **Total** | **30,000 USD** |  |
 
 ## Future Plans
