@@ -87,9 +87,10 @@ There are a numerous number of libraries available for Polkadot but we are the o
 
 ### Team Code Repos
 
-- https://github.com/leonardocustodio/polkadart
+- https://github.com/justkawal/polkadart
 - https://github.com/leonardocustodio
 - https://github.com/justkawal
+- https://github.com/polkadart
 
 ### Team's experience
 
