@@ -21,6 +21,8 @@ Multiple packages were delivered and are being maintaining ever since, those inc
 
 And our documentation website at https://polkadart.dev
 
+**Status**: Terminated
+
 ### Project Details
 
 We would like to continue the development of the library proposing some new features and changes that we believe it will be very benefical to the community.
