@@ -15,6 +15,7 @@ The `fiat-shamir` module supplies a generic transcript/XOF layer (SHAKE128/256) 
 
 Together, the four libraries form a complete suite for randomness, privacy-preserving identity, JAM/Safrole consensus and any project needing auditable, modern elliptic-curve cryptography on Python.
 
+**Status:** Terminated
 
 #### Relation to Polkadot
 
