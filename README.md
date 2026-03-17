@@ -1,5 +1,5 @@
 > [!CAUTION]
-> **This bounty is now closed and will not accept further submissions. See the final report [here](https://github.com/PolkadotOpenSourceGrants/monthly-report/blob/main/reports/final_report.md).**
+> **This bounty is now closed and will not accept further submissions. See the final report [here](https://github.com/PolkadotOpenSourceGrants/apply/blob/master/final_report.md).**
 
 # Polkadot Open Source Grants Bounty<!-- omit in toc -->
 
