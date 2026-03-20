@@ -46,4 +46,4 @@ This means:
 
 The Polkadot Open Source Grants Bounty supported a focused set of open-source projects across the Polkadot ecosystem, including governance tooling, developer SDKs, wallet testing infrastructure, developer tooling, and cross-chain infrastructure. In total, **8 projects were completed successfully**, representing **$188,000 USD** in delivered and fully paid grant value. In addition, the program paid **$10,000 USD** for an approved milestone outside the fully finalized set of projects, and **$22,500 USD** in curator compensation, bringing the total paid out by the program to **$220,500 USD**.
 
-The remaining **6,837.266 DOT** available in the bounty will be returned to the Polkadot Treasury through a referenda to be submitted on OpenGov.
+The remaining **427.01 DOT** available in the bounty will be returned to the Polkadot Treasury through a referenda to be submitted on OpenGov.
